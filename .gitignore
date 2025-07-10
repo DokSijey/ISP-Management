@@ -1,0 +1,19 @@
+# CodeIgniter 4 folders to ignore
+writable/cache/*
+writable/logs/*
+writable/session/*
+writable/uploads/*
+.env
+
+# Composer dependencies
+/vendor
+
+# Node dependencies
+/node_modules
+
+# IDE and system files
+.DS_Store
+Thumbs.db
+.idea
+.vscode
+*.log
