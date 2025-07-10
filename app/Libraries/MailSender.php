@@ -15,8 +15,8 @@ class MailSender
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com';
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'allstartechinternetservices@gmail.com';
-            $mail->Password   = 'rzuu chmk yrla mlvo'; // Gmail app password
+            $mail->Username   = '#######@gmail.com';
+            $mail->Password   = '######o'; //
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port       = 587;
 
