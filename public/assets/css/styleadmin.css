@@ -1,0 +1,461 @@
+/* General Styling */
+body {
+    background-color: #f7f7f7;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    width: 220px;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.sidebar a {
+    color: white;
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #34495e;
+}
+
+.sidebar .sidebar-header {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.sidebar .sidebar-footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+/* Main Content Area */
+.p-4 {
+    margin-left: 240px;
+    padding-top: 20px;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2, h4 {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+hr {
+    border-color: #ddd;
+}
+
+/* Card Styling */
+.card {
+    background-color: white;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-left: 5px solid transparent; /* Left border to be colored */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+/* Left-side Color Line Based on Card Type */
+.card.bg-primary {
+    border-left: 5px solid #3498db; /* Blue for Total Subscribers */
+}
+
+.card.bg-warning {
+    border-left: 5px solid #f39c12; /* Yellow for Pending Applications */
+}
+
+.card.bg-success {
+    border-left: 5px solid #2ecc71; /* Green for Approved Applications */
+}
+
+.card.bg-danger {
+    border-left: 5px solid #e74c3c; /* Red for Declined Applications */
+}
+
+.card.bg-secondary {
+    border-left: 5px solid #7f8c8d; /* Gray for Technician-related */
+}
+
+/* Card Text Color */
+.card-text {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Canvas for Chart */
+canvas {
+    margin-top: 30px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .p-4 {
+        margin-left: 200px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .col-md-3, .col-md-2 {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .sidebar {
+        width: 150px;
+    }
+
+    .p-4 {
+        margin-left: 150px;
+    }
+
+    .col-md-3, .col-md-2 {
+        width: 100%;
+    }
+}
+.card {
+    border-left: 5px solid #4CAF50; /* Change this to your desired color */
+    padding-left: 15px; /* Adds space between the left border and the card content */
+    margin-bottom: 20px; /* Adds space between each card */
+}
+
+.card .card-body {
+    padding-left: 20px; /* Adjust this padding if needed */
+}
+/* Add shadow and spacing to cards */
+.custom-card {
+    border-left: 5px solid #4CAF50; /* Add a green left border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Improve card title font */
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Add icons to card titles for visual appeal */
+.card-title i {
+    margin-right: 10px;
+    color: #4CAF50;
+}
+
+/* Space out the sections */
+.container-fluid {
+    padding-top: 30px;
+    max-width: 100%;
+}
+
+/* Improve overall layout responsiveness */
+@media (max-width: 768px) {
+    .card-body {
+        padding: 15px;
+    }
+}
+/* Sidebar styles for mobile */
+#sidebar-wrapper {
+    transition: all 0.3s ease-in-out;
+}
+
+/* On mobile, the sidebar is hidden */
+@media (max-width: 991px) {
+    #sidebar-wrapper {
+        width: 0;
+        overflow: hidden;
+    }
+
+    #content {
+        margin-left: 0;
+    }
+
+    #sidebar-wrapper.active {
+        width: 250px;
+    }
+
+    .sidebar-heading {
+        display: none;  /* Optional: Hide the sidebar heading on small screens */
+    }
+
+    .list-group-item {
+        padding-left: 20px;  /* Adjust padding for smaller screens */
+    }
+
+    .sidebar-active {
+        margin-left: 250px;
+    }
+
+    .navbar .container-fluid {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar .container-fluid button {
+        display: block;  /* Show sidebar toggle button only on mobile */
+    }
+}
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Header */
+th {
+    padding: 16px 20px;
+    background-color: #0d6efd;
+    color: #ffffff;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-weight: 600;
+    text-align: left;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* Table Rows */
+td {
+    padding: 15px 20px;
+    background-color: #ffffff;
+    text-align: left;
+    color: #495057;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #f0f1f6;
+}
+
+/* Zebra Striping */
+tr:nth-child(odd) {
+    background-color: #f9fafb;
+}
+
+/* Hover Effect for Rows */
+/* Status Badge */
+.badge {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    border-radius: 20px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.badge-success {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.badge-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.badge-warning {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+/* Buttons (General) */
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+/* Primary Button */
+button.btn-primary {
+    background-color: #0d6efd;
+    color: white;
+}
+
+button.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Danger Button */
+button.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+button.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Small Button */
+button.btn-sm {
+    padding: 6px 12px;
+    font-size: 0.875rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table {
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 12px;
+    }
+
+    /* Stack headers and data */
+    th, td {
+        display: block;
+        text-align: right;
+        padding-right: 50%;
+    }
+
+    th::before {
+        content: attr(data-title);
+        font-weight: 600;
+        font-size: 1rem;
+    }
+}
+/* Apply the same width and height for all cards */
+.custom-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;  /* Set the height for consistent sizing */
+    width: 100%;    /* Ensure the card takes the full width within the column */
+    min-width: 250px; /* Prevent the card from shrinking too much */
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+    transition: transform 0.2s ease;
+}
+
+.custom-card .card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+}
+
+.custom-card .card-text {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #343a40;
+}
+
+.custom-card i {
+    color: #0d6efd;
+    margin-bottom: 10px;
+}
+
+/* Ensure the row has consistent spacing and alignment */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;  /* Adjust gap between cards */
+}
+
+.col-md-2 {
+    display: flex;
+    justify-content: center;
+    flex: 1 1 20%; /* Ensure all columns have equal width */
+    min-width: 250px;
+}
+/* Ensure all cards have the same width and height */
+.custom-card1 {
+    height: 100%; /* Make sure the cards take up the full height of the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    transition: transform 0.2s ease;
+}
+
+.custom-card1 .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.custom-card1 .card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.custom-card1 .card-text {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #343a40;
+}
+
+/* Ensure proper alignment of cards in the row */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;  /* Space between cards */
+}
+
+/* Adjust columns for all 4 cards to be in 1 row */
+.col-md-3 {
+    flex: 1 1 24%;  /* Each card takes up 24% width (12 columns / 4 cards = 3 columns per card) */
+    min-width: 230px;  /* Prevent cards from becoming too small */
+}

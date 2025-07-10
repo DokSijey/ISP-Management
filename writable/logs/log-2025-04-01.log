@@ -1,0 +1,136 @@
+CRITICAL - 2025-04-01 10:42:56 --> Error: Class "App\Controllers\Database" not found
+[Method: POST, Route: admin/decline]
+in APPPATH\Controllers\AdminController.php on line 109.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->decline()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-04-01 10:50:32 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: admin/admit]
+in SYSTEMPATH\BaseModel.php on line 1010.
+ 1 SYSTEMPATH\BaseModel.php(1010): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Models\ApplicationModel.php(21): CodeIgniter\Model->update('3', [...])
+ 4 APPPATH\Controllers\AdminController.php(85): App\Models\ApplicationModel->admitApplication('3')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->admit()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-04-01 10:50:37 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: admin/admit]
+in SYSTEMPATH\BaseModel.php on line 1010.
+ 1 SYSTEMPATH\BaseModel.php(1010): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Models\ApplicationModel.php(21): CodeIgniter\Model->update('3', [...])
+ 4 APPPATH\Controllers\AdminController.php(85): App\Models\ApplicationModel->admitApplication('3')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->admit()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-04-01 10:51:20 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: admin/admit]
+in SYSTEMPATH\BaseModel.php on line 1010.
+ 1 SYSTEMPATH\BaseModel.php(1010): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Models\ApplicationModel.php(21): CodeIgniter\Model->update('3', [...])
+ 4 APPPATH\Controllers\AdminController.php(85): App\Models\ApplicationModel->admitApplication('3')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->admit()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-04-01 23:09:31 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/applications.php"
+[Method: GET, Route: admin/pending-applications]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/applications.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/applications', [], true)
+ 3 APPPATH\Controllers\AdminController.php(79): view('admin/applications', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->applications()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-04-01 23:09:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/applications.php"
+[Method: GET, Route: admin/pending-applications]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/applications.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/applications', [], true)
+ 3 APPPATH\Controllers\AdminController.php(79): view('admin/applications', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->applications()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-04-01 23:22:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/declined_applications.php"
+[Method: GET, Route: admin/declined-applications]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/declined_applications.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/declined_applications', [], true)
+ 3 APPPATH\Controllers\AdminController.php(114): view('admin/declined_applications', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->declinedApplications()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-04-01 23:23:17 --> ErrorException: Undefined array key "Reason"
+[Method: GET, Route: admin/declined-applications]
+in APPPATH\Views\admin\declined_applications.php on line 38.
+ 1 APPPATH\Views\admin\declined_applications.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Reason"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\declined_applications.php', 38)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\declined_applications.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/declined_applications', [], true)
+ 5 APPPATH\Controllers\AdminController.php(114): view('admin/declined_applications', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->declinedApplications()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-04-01 23:24:40 --> ErrorException: Undefined array key "Reason"
+[Method: GET, Route: admin/declined-applications]
+in APPPATH\Views\admin\declined_applications.php on line 38.
+ 1 APPPATH\Views\admin\declined_applications.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Reason"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\declined_applications.php', 38)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\declined_applications.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/declined_applications', [], true)
+ 5 APPPATH\Controllers\AdminController.php(115): view('admin/declined_applications', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->declinedApplications()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-04-01 23:27:50 --> ErrorException: Undefined variable $page_type
+[Method: GET, Route: admin/approved-applications]
+in APPPATH\Views\admin\approved_applications.php on line 26.
+ 1 APPPATH\Views\admin\approved_applications.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $page_type', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\approved_applications.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\approved_applications.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/approved_applications', [], true)
+ 5 APPPATH\Controllers\AdminController.php(97): view('admin/approved_applications', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->approvedApplications()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')

@@ -1,0 +1,1228 @@
+CRITICAL - 2025-05-30 02:49:36 --> ErrorException: Undefined array key "first_name"
+[Method: GET, Route: technician/dashboard]
+in APPPATH\Views\technician\dashboard.php on line 176.
+ 1 APPPATH\Views\technician\dashboard.php(176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "first_name"', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php', 176)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/dashboard', [], true)
+ 5 APPPATH\Controllers\TechnicianController.php(108): view('technician/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 03:26:15 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: technician/updateRepairStatus]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('technician/updateRepairStatus', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+ERROR - 2025-05-30 05:22:37 --> mysqli_sql_exception: Unknown column 'applications.account_number' in 'field list' in D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `install...', 0)
+#1 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `install...')
+#2 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `install...')
+#3 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `install...', Array, false)
+#4 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\app\Controllers\TechnicianController.php(70): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+#8 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+#9 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-05-30 05:22:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'applications.account_number' in 'field list'
+[Method: GET, Route: technician/dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `install_requests`.*, `applications`.`first_name` as `app_first_name`, `applications`.`last_name` as `app_last_name`, `applications`.`contact_number1`, `applications`.`email`, `applications`.`account_number`
+FROM `install_requests`
+JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `install_requests`.`status` = :install_requests.status:
+AND `install_requests`.`technician_id` = :install_requests.technician_id:
+AND `applications`.`city` = :applications.city:
+ORDER BY `install_requests`.`schedule_date` ASC
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\TechnicianController.php(70): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 05:22:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'applications.account_number' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `install_requests`.*, `applications`.`first_name` as `app_first_name`, `applications`.`last_name` as `app_last_name`, `applications`.`contact_number1`, `applications`.`email`, `applications`.`account_number`
+FROM `install_requests`
+JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `install_requests`.`status` = \'On-going\'
+AND `install_requests`.`technician_id` = \'7\'
+AND `applications`.`city` = \'City of Malolos\'
+ORDER BY `install_requests`.`schedule_date` ASC
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `install_requests`.*, `applications`.`first_name` as `app_first_name`, `applications`.`last_name` as `app_last_name`, `applications`.`contact_number1`, `applications`.`email`, `applications`.`account_number`
+FROM `install_requests`
+JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `install_requests`.`status` = \'On-going\'
+AND `install_requests`.`technician_id` = \'7\'
+AND `applications`.`city` = \'City of Malolos\'
+ORDER BY `install_requests`.`schedule_date` ASC
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `install_requests`.*, `applications`.`first_name` as `app_first_name`, `applications`.`last_name` as `app_last_name`, `applications`.`contact_number1`, `applications`.`email`, `applications`.`account_number`
+FROM `install_requests`
+JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `install_requests`.`status` = :install_requests.status:
+AND `install_requests`.`technician_id` = :install_requests.technician_id:
+AND `applications`.`city` = :applications.city:
+ORDER BY `install_requests`.`schedule_date` ASC
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\TechnicianController.php(70): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 05:22:37 --> [Caused by] mysqli_sql_exception: Unknown column 'applications.account_number' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `install_requests`.*, `applications`.`first_name` as `app_first_name`, `applications`.`last_name` as `app_last_name`, `applications`.`contact_number1`, `applications`.`email`, `applications`.`account_number`
+FROM `install_requests`
+JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `install_requests`.`status` = \'On-going\'
+AND `install_requests`.`technician_id` = \'7\'
+AND `applications`.`city` = \'City of Malolos\'
+ORDER BY `install_requests`.`schedule_date` ASC
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `install_requests`.*, `applications`.`first_name` as `app_first_name`, `applications`.`last_name` as `app_last_name`, `applications`.`contact_number1`, `applications`.`email`, `applications`.`account_number`
+FROM `install_requests`
+JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `install_requests`.`status` = \'On-going\'
+AND `install_requests`.`technician_id` = \'7\'
+AND `applications`.`city` = \'City of Malolos\'
+ORDER BY `install_requests`.`schedule_date` ASC
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `install_requests`.*, `applications`.`first_name` as `app_first_name`, `applications`.`last_name` as `app_last_name`, `applications`.`contact_number1`, `applications`.`email`, `applications`.`account_number`
+FROM `install_requests`
+JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `install_requests`.`status` = \'On-going\'
+AND `install_requests`.`technician_id` = \'7\'
+AND `applications`.`city` = \'City of Malolos\'
+ORDER BY `install_requests`.`schedule_date` ASC
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `install_requests`.*, `applications`.`first_name` as `app_first_name`, `applications`.`last_name` as `app_last_name`, `applications`.`contact_number1`, `applications`.`email`, `applications`.`account_number`
+FROM `install_requests`
+JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `install_requests`.`status` = :install_requests.status:
+AND `install_requests`.`technician_id` = :install_requests.technician_id:
+AND `applications`.`city` = :applications.city:
+ORDER BY `install_requests`.`schedule_date` ASC
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\TechnicianController.php(70): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+ERROR - 2025-05-30 05:23:44 --> mysqli_sql_exception: Unknown column 'applications.account_number' in 'field list' in D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `install...', 0)
+#1 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `install...')
+#2 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `install...')
+#3 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `install...', Array, false)
+#4 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\app\Controllers\TechnicianController.php(70): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+#8 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+#9 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-05-30 05:23:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'applications.account_number' in 'field list'
+[Method: GET, Route: technician/dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `install_requests`.*, `applications`.`first_name` as `app_first_name`, `applications`.`last_name` as `app_last_name`, `applications`.`contact_number1`, `applications`.`email`, `applications`.`account_number`
+FROM `install_requests`
+JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `install_requests`.`status` = :install_requests.status:
+AND `install_requests`.`technician_id` = :install_requests.technician_id:
+AND `applications`.`city` = :applications.city:
+ORDER BY `install_requests`.`schedule_date` ASC
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\TechnicianController.php(70): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 05:23:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'applications.account_number' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `install_requests`.*, `applications`.`first_name` as `app_first_name`, `applications`.`last_name` as `app_last_name`, `applications`.`contact_number1`, `applications`.`email`, `applications`.`account_number`
+FROM `install_requests`
+JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `install_requests`.`status` = \'On-going\'
+AND `install_requests`.`technician_id` = \'7\'
+AND `applications`.`city` = \'City of Malolos\'
+ORDER BY `install_requests`.`schedule_date` ASC
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `install_requests`.*, `applications`.`first_name` as `app_first_name`, `applications`.`last_name` as `app_last_name`, `applications`.`contact_number1`, `applications`.`email`, `applications`.`account_number`
+FROM `install_requests`
+JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `install_requests`.`status` = \'On-going\'
+AND `install_requests`.`technician_id` = \'7\'
+AND `applications`.`city` = \'City of Malolos\'
+ORDER BY `install_requests`.`schedule_date` ASC
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `install_requests`.*, `applications`.`first_name` as `app_first_name`, `applications`.`last_name` as `app_last_name`, `applications`.`contact_number1`, `applications`.`email`, `applications`.`account_number`
+FROM `install_requests`
+JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `install_requests`.`status` = :install_requests.status:
+AND `install_requests`.`technician_id` = :install_requests.technician_id:
+AND `applications`.`city` = :applications.city:
+ORDER BY `install_requests`.`schedule_date` ASC
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\TechnicianController.php(70): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 05:23:44 --> [Caused by] mysqli_sql_exception: Unknown column 'applications.account_number' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `install_requests`.*, `applications`.`first_name` as `app_first_name`, `applications`.`last_name` as `app_last_name`, `applications`.`contact_number1`, `applications`.`email`, `applications`.`account_number`
+FROM `install_requests`
+JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `install_requests`.`status` = \'On-going\'
+AND `install_requests`.`technician_id` = \'7\'
+AND `applications`.`city` = \'City of Malolos\'
+ORDER BY `install_requests`.`schedule_date` ASC
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `install_requests`.*, `applications`.`first_name` as `app_first_name`, `applications`.`last_name` as `app_last_name`, `applications`.`contact_number1`, `applications`.`email`, `applications`.`account_number`
+FROM `install_requests`
+JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `install_requests`.`status` = \'On-going\'
+AND `install_requests`.`technician_id` = \'7\'
+AND `applications`.`city` = \'City of Malolos\'
+ORDER BY `install_requests`.`schedule_date` ASC
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `install_requests`.*, `applications`.`first_name` as `app_first_name`, `applications`.`last_name` as `app_last_name`, `applications`.`contact_number1`, `applications`.`email`, `applications`.`account_number`
+FROM `install_requests`
+JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `install_requests`.`status` = \'On-going\'
+AND `install_requests`.`technician_id` = \'7\'
+AND `applications`.`city` = \'City of Malolos\'
+ORDER BY `install_requests`.`schedule_date` ASC
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `install_requests`.*, `applications`.`first_name` as `app_first_name`, `applications`.`last_name` as `app_last_name`, `applications`.`contact_number1`, `applications`.`email`, `applications`.`account_number`
+FROM `install_requests`
+JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `install_requests`.`status` = :install_requests.status:
+AND `install_requests`.`technician_id` = :install_requests.technician_id:
+AND `applications`.`city` = :applications.city:
+ORDER BY `install_requests`.`schedule_date` ASC
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\TechnicianController.php(70): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+ERROR - 2025-05-30 05:24:31 --> mysqli_sql_exception: Unknown column 'install_requests.technician_id' in 'where clause' in D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `install...', 0)
+#1 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `install...')
+#2 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `install...')
+#3 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `install...', Array, false)
+#4 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\app\Controllers\TechnicianController.php(70): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+#8 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+#9 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-05-30 05:24:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'install_requests.technician_id' in 'where clause'
+[Method: GET, Route: technician/dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `install_requests`.*, `applications`.`first_name` as `app_first_name`, `applications`.`last_name` as `app_last_name`, `applications`.`contact_number1`, `applications`.`email`
+FROM `install_requests`
+JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `install_requests`.`status` = :install_requests.status:
+AND `install_requests`.`technician_id` = :install_requests.technician_id:
+AND `applications`.`city` = :applications.city:
+ORDER BY `install_requests`.`schedule_date` ASC
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\TechnicianController.php(70): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 05:24:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'install_requests.technician_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `install_requests`.*, `applications`.`first_name` as `app_first_name`, `applications`.`last_name` as `app_last_name`, `applications`.`contact_number1`, `applications`.`email`
+FROM `install_requests`
+JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `install_requests`.`status` = \'On-going\'
+AND `install_requests`.`technician_id` = \'7\'
+AND `applications`.`city` = \'City of Malolos\'
+ORDER BY `install_requests`.`schedule_date` ASC
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `install_requests`.*, `applications`.`first_name` as `app_first_name`, `applications`.`last_name` as `app_last_name`, `applications`.`contact_number1`, `applications`.`email`
+FROM `install_requests`
+JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `install_requests`.`status` = \'On-going\'
+AND `install_requests`.`technician_id` = \'7\'
+AND `applications`.`city` = \'City of Malolos\'
+ORDER BY `install_requests`.`schedule_date` ASC
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `install_requests`.*, `applications`.`first_name` as `app_first_name`, `applications`.`last_name` as `app_last_name`, `applications`.`contact_number1`, `applications`.`email`
+FROM `install_requests`
+JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `install_requests`.`status` = :install_requests.status:
+AND `install_requests`.`technician_id` = :install_requests.technician_id:
+AND `applications`.`city` = :applications.city:
+ORDER BY `install_requests`.`schedule_date` ASC
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\TechnicianController.php(70): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 05:24:31 --> [Caused by] mysqli_sql_exception: Unknown column 'install_requests.technician_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `install_requests`.*, `applications`.`first_name` as `app_first_name`, `applications`.`last_name` as `app_last_name`, `applications`.`contact_number1`, `applications`.`email`
+FROM `install_requests`
+JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `install_requests`.`status` = \'On-going\'
+AND `install_requests`.`technician_id` = \'7\'
+AND `applications`.`city` = \'City of Malolos\'
+ORDER BY `install_requests`.`schedule_date` ASC
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `install_requests`.*, `applications`.`first_name` as `app_first_name`, `applications`.`last_name` as `app_last_name`, `applications`.`contact_number1`, `applications`.`email`
+FROM `install_requests`
+JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `install_requests`.`status` = \'On-going\'
+AND `install_requests`.`technician_id` = \'7\'
+AND `applications`.`city` = \'City of Malolos\'
+ORDER BY `install_requests`.`schedule_date` ASC
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `install_requests`.*, `applications`.`first_name` as `app_first_name`, `applications`.`last_name` as `app_last_name`, `applications`.`contact_number1`, `applications`.`email`
+FROM `install_requests`
+JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `install_requests`.`status` = \'On-going\'
+AND `install_requests`.`technician_id` = \'7\'
+AND `applications`.`city` = \'City of Malolos\'
+ORDER BY `install_requests`.`schedule_date` ASC
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `install_requests`.*, `applications`.`first_name` as `app_first_name`, `applications`.`last_name` as `app_last_name`, `applications`.`contact_number1`, `applications`.`email`
+FROM `install_requests`
+JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `install_requests`.`status` = :install_requests.status:
+AND `install_requests`.`technician_id` = :install_requests.technician_id:
+AND `applications`.`city` = :applications.city:
+ORDER BY `install_requests`.`schedule_date` ASC
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\TechnicianController.php(70): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+ERROR - 2025-05-30 05:25:19 --> mysqli_sql_exception: Unknown column 'repair_tickets.technician_id' in 'where clause' in D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `repair_...', 0)
+#1 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `repair_...')
+#2 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `repair_...')
+#3 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `repair_...', Array, false)
+#4 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\app\Controllers\TechnicianController.php(79): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+#8 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+#9 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-05-30 05:25:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'repair_tickets.technician_id' in 'where clause'
+[Method: GET, Route: technician/dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `repair_tickets`.*, `subscribers`.`first_name` as `sub_first_name`, `subscribers`.`last_name` as `sub_last_name`, `subscribers`.`account_number`
+FROM `repair_tickets`
+JOIN `subscribers` ON `subscribers`.`id` = `repair_tickets`.`subscriber_id`
+WHERE `repair_tickets`.`status` = :repair_tickets.status:
+AND `repair_tickets`.`technician_id` = :repair_tickets.technician_id:
+AND `subscribers`.`city` = :subscribers.city:
+ORDER BY `repair_tickets`.`scheduled_date` ASC
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\TechnicianController.php(79): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 05:25:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'repair_tickets.technician_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `repair_tickets`.*, `subscribers`.`first_name` as `sub_first_name`, `subscribers`.`last_name` as `sub_last_name`, `subscribers`.`account_number`
+FROM `repair_tickets`
+JOIN `subscribers` ON `subscribers`.`id` = `repair_tickets`.`subscriber_id`
+WHERE `repair_tickets`.`status` = \'On-going\'
+AND `repair_tickets`.`technician_id` = \'7\'
+AND `subscribers`.`city` = \'City of Malolos\'
+ORDER BY `repair_tickets`.`scheduled_date` ASC
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `repair_tickets`.*, `subscribers`.`first_name` as `sub_first_name`, `subscribers`.`last_name` as `sub_last_name`, `subscribers`.`account_number`
+FROM `repair_tickets`
+JOIN `subscribers` ON `subscribers`.`id` = `repair_tickets`.`subscriber_id`
+WHERE `repair_tickets`.`status` = \'On-going\'
+AND `repair_tickets`.`technician_id` = \'7\'
+AND `subscribers`.`city` = \'City of Malolos\'
+ORDER BY `repair_tickets`.`scheduled_date` ASC
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `repair_tickets`.*, `subscribers`.`first_name` as `sub_first_name`, `subscribers`.`last_name` as `sub_last_name`, `subscribers`.`account_number`
+FROM `repair_tickets`
+JOIN `subscribers` ON `subscribers`.`id` = `repair_tickets`.`subscriber_id`
+WHERE `repair_tickets`.`status` = :repair_tickets.status:
+AND `repair_tickets`.`technician_id` = :repair_tickets.technician_id:
+AND `subscribers`.`city` = :subscribers.city:
+ORDER BY `repair_tickets`.`scheduled_date` ASC
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\TechnicianController.php(79): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 05:25:19 --> [Caused by] mysqli_sql_exception: Unknown column 'repair_tickets.technician_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `repair_tickets`.*, `subscribers`.`first_name` as `sub_first_name`, `subscribers`.`last_name` as `sub_last_name`, `subscribers`.`account_number`
+FROM `repair_tickets`
+JOIN `subscribers` ON `subscribers`.`id` = `repair_tickets`.`subscriber_id`
+WHERE `repair_tickets`.`status` = \'On-going\'
+AND `repair_tickets`.`technician_id` = \'7\'
+AND `subscribers`.`city` = \'City of Malolos\'
+ORDER BY `repair_tickets`.`scheduled_date` ASC
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `repair_tickets`.*, `subscribers`.`first_name` as `sub_first_name`, `subscribers`.`last_name` as `sub_last_name`, `subscribers`.`account_number`
+FROM `repair_tickets`
+JOIN `subscribers` ON `subscribers`.`id` = `repair_tickets`.`subscriber_id`
+WHERE `repair_tickets`.`status` = \'On-going\'
+AND `repair_tickets`.`technician_id` = \'7\'
+AND `subscribers`.`city` = \'City of Malolos\'
+ORDER BY `repair_tickets`.`scheduled_date` ASC
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `repair_tickets`.*, `subscribers`.`first_name` as `sub_first_name`, `subscribers`.`last_name` as `sub_last_name`, `subscribers`.`account_number`
+FROM `repair_tickets`
+JOIN `subscribers` ON `subscribers`.`id` = `repair_tickets`.`subscriber_id`
+WHERE `repair_tickets`.`status` = \'On-going\'
+AND `repair_tickets`.`technician_id` = \'7\'
+AND `subscribers`.`city` = \'City of Malolos\'
+ORDER BY `repair_tickets`.`scheduled_date` ASC
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `repair_tickets`.*, `subscribers`.`first_name` as `sub_first_name`, `subscribers`.`last_name` as `sub_last_name`, `subscribers`.`account_number`
+FROM `repair_tickets`
+JOIN `subscribers` ON `subscribers`.`id` = `repair_tickets`.`subscriber_id`
+WHERE `repair_tickets`.`status` = :repair_tickets.status:
+AND `repair_tickets`.`technician_id` = :repair_tickets.technician_id:
+AND `subscribers`.`city` = :subscribers.city:
+ORDER BY `repair_tickets`.`scheduled_date` ASC
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\TechnicianController.php(79): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+ERROR - 2025-05-30 05:25:57 --> mysqli_sql_exception: Unknown column 'applications.account_number' in 'field list' in D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `install...', 0)
+#1 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `install...')
+#2 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `install...')
+#3 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `install...', Array, false)
+#4 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\app\Controllers\TechnicianController.php(70): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+#8 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+#9 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-05-30 05:25:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'applications.account_number' in 'field list'
+[Method: GET, Route: technician/dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `install_requests`.*, `applications`.`first_name` as `app_first_name`, `applications`.`last_name` as `app_last_name`, `applications`.`contact_number1`, `applications`.`email`, `applications`.`account_number`
+FROM `install_requests`
+JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `install_requests`.`status` = :install_requests.status:
+AND `install_requests`.`technician_id` = :install_requests.technician_id:
+AND `applications`.`city` = :applications.city:
+ORDER BY `install_requests`.`schedule_date` ASC
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\TechnicianController.php(70): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 05:25:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'applications.account_number' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `install_requests`.*, `applications`.`first_name` as `app_first_name`, `applications`.`last_name` as `app_last_name`, `applications`.`contact_number1`, `applications`.`email`, `applications`.`account_number`
+FROM `install_requests`
+JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `install_requests`.`status` = \'On-going\'
+AND `install_requests`.`technician_id` = \'7\'
+AND `applications`.`city` = \'City of Malolos\'
+ORDER BY `install_requests`.`schedule_date` ASC
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `install_requests`.*, `applications`.`first_name` as `app_first_name`, `applications`.`last_name` as `app_last_name`, `applications`.`contact_number1`, `applications`.`email`, `applications`.`account_number`
+FROM `install_requests`
+JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `install_requests`.`status` = \'On-going\'
+AND `install_requests`.`technician_id` = \'7\'
+AND `applications`.`city` = \'City of Malolos\'
+ORDER BY `install_requests`.`schedule_date` ASC
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `install_requests`.*, `applications`.`first_name` as `app_first_name`, `applications`.`last_name` as `app_last_name`, `applications`.`contact_number1`, `applications`.`email`, `applications`.`account_number`
+FROM `install_requests`
+JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `install_requests`.`status` = :install_requests.status:
+AND `install_requests`.`technician_id` = :install_requests.technician_id:
+AND `applications`.`city` = :applications.city:
+ORDER BY `install_requests`.`schedule_date` ASC
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\TechnicianController.php(70): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 05:25:57 --> [Caused by] mysqli_sql_exception: Unknown column 'applications.account_number' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `install_requests`.*, `applications`.`first_name` as `app_first_name`, `applications`.`last_name` as `app_last_name`, `applications`.`contact_number1`, `applications`.`email`, `applications`.`account_number`
+FROM `install_requests`
+JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `install_requests`.`status` = \'On-going\'
+AND `install_requests`.`technician_id` = \'7\'
+AND `applications`.`city` = \'City of Malolos\'
+ORDER BY `install_requests`.`schedule_date` ASC
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `install_requests`.*, `applications`.`first_name` as `app_first_name`, `applications`.`last_name` as `app_last_name`, `applications`.`contact_number1`, `applications`.`email`, `applications`.`account_number`
+FROM `install_requests`
+JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `install_requests`.`status` = \'On-going\'
+AND `install_requests`.`technician_id` = \'7\'
+AND `applications`.`city` = \'City of Malolos\'
+ORDER BY `install_requests`.`schedule_date` ASC
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `install_requests`.*, `applications`.`first_name` as `app_first_name`, `applications`.`last_name` as `app_last_name`, `applications`.`contact_number1`, `applications`.`email`, `applications`.`account_number`
+FROM `install_requests`
+JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `install_requests`.`status` = \'On-going\'
+AND `install_requests`.`technician_id` = \'7\'
+AND `applications`.`city` = \'City of Malolos\'
+ORDER BY `install_requests`.`schedule_date` ASC
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `install_requests`.*, `applications`.`first_name` as `app_first_name`, `applications`.`last_name` as `app_last_name`, `applications`.`contact_number1`, `applications`.`email`, `applications`.`account_number`
+FROM `install_requests`
+JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `install_requests`.`status` = :install_requests.status:
+AND `install_requests`.`technician_id` = :install_requests.technician_id:
+AND `applications`.`city` = :applications.city:
+ORDER BY `install_requests`.`schedule_date` ASC
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\TechnicianController.php(70): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 10:44:31 --> ErrorException: Maximum execution time of 60 seconds exceeded
+[Method: POST, Route: admin/mark-paid]
+in VENDORPATH\phpmailer\phpmailer\src\SMTP.php on line 1299.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-30 12:31:14 --> ErrorException: Undefined array key "install_id"
+[Method: GET, Route: technician/dashboard]
+in APPPATH\Views\technician\dashboard.php on line 155.
+ 1 APPPATH\Views\technician\dashboard.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "install_id"', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php', 155)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/dashboard', [], true)
+ 5 APPPATH\Controllers\TechnicianController.php(110): view('technician/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 12:50:53 --> ErrorException: Undefined array key "selected_plan"
+[Method: GET, Route: technician/dashboard]
+in APPPATH\Views\technician\dashboard.php on line 173.
+ 1 APPPATH\Views\technician\dashboard.php(173): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "selected_plan"', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php', 173)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/dashboard', [], true)
+ 5 APPPATH\Controllers\TechnicianController.php(110): view('technician/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 13:29:19 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: technician/updateStatus]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('technician/updateStatus', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 13:56:47 --> ErrorException: Undefined variable $ongoingRequest
+[Method: GET, Route: technician/dashboard]
+in APPPATH\Views\technician\dashboard.php on line 455.
+ 1 APPPATH\Views\technician\dashboard.php(455): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ongoingRequest', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php', 455)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/dashboard', [], true)
+ 5 APPPATH\Controllers\TechnicianController.php(110): view('technician/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 13:57:32 --> ErrorException: Undefined variable $ongoingRequest
+[Method: GET, Route: technician/dashboard]
+in APPPATH\Views\technician\dashboard.php on line 455.
+ 1 APPPATH\Views\technician\dashboard.php(455): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ongoingRequest', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php', 455)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/dashboard', [], true)
+ 5 APPPATH\Controllers\TechnicianController.php(110): view('technician/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 13:58:12 --> ErrorException: Undefined variable $ongoingRequest
+[Method: GET, Route: technician/dashboard]
+in APPPATH\Views\technician\dashboard.php on line 455.
+ 1 APPPATH\Views\technician\dashboard.php(455): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ongoingRequest', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php', 455)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/dashboard', [], true)
+ 5 APPPATH\Controllers\TechnicianController.php(110): view('technician/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 14:00:03 --> ErrorException: Undefined variable $ongoingRequest
+[Method: GET, Route: technician/dashboard]
+in APPPATH\Views\technician\dashboard.php on line 455.
+ 1 APPPATH\Views\technician\dashboard.php(455): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ongoingRequest', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php', 455)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/dashboard', [], true)
+ 5 APPPATH\Controllers\TechnicianController.php(110): view('technician/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 14:02:19 --> ErrorException: Undefined variable $ongoingticketdata
+[Method: GET, Route: technician/dashboard]
+in APPPATH\Views\technician\dashboard.php on line 455.
+ 1 APPPATH\Views\technician\dashboard.php(455): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ongoingticketdata', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php', 455)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/dashboard', [], true)
+ 5 APPPATH\Controllers\TechnicianController.php(110): view('technician/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 14:10:16 --> ErrorException: Undefined array key "first_name"
+[Method: GET, Route: technician/dashboard]
+in APPPATH\Views\technician\dashboard.php on line 458.
+ 1 APPPATH\Views\technician\dashboard.php(458): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "first_name"', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php', 458)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/dashboard', [], true)
+ 5 APPPATH\Controllers\TechnicianController.php(110): view('technician/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 14:19:48 --> ErrorException: Undefined array key "city"
+[Method: GET, Route: technician/dashboard]
+in APPPATH\Views\technician\dashboard.php on line 456.
+ 1 APPPATH\Views\technician\dashboard.php(456): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "city"', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php', 456)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/dashboard', [], true)
+ 5 APPPATH\Controllers\TechnicianController.php(110): view('technician/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 14:58:53 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: technician/dashboard]
+in APPPATH\Views\technician\dashboard.php on line 456.
+ 1 APPPATH\Views\technician\dashboard.php(456): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php', 456)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/dashboard', [], true)
+ 5 APPPATH\Controllers\TechnicianController.php(110): view('technician/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 15:00:22 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: technician/dashboard]
+in APPPATH\Views\technician\dashboard.php on line 456.
+ 1 APPPATH\Views\technician\dashboard.php(456): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php', 456)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/dashboard', [], true)
+ 5 APPPATH\Controllers\TechnicianController.php(110): view('technician/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 15:00:29 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: technician/dashboard]
+in APPPATH\Views\technician\dashboard.php on line 456.
+ 1 APPPATH\Views\technician\dashboard.php(456): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php', 456)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/dashboard', [], true)
+ 5 APPPATH\Controllers\TechnicianController.php(110): view('technician/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 15:00:31 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: technician/dashboard]
+in APPPATH\Views\technician\dashboard.php on line 456.
+ 1 APPPATH\Views\technician\dashboard.php(456): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php', 456)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/dashboard', [], true)
+ 5 APPPATH\Controllers\TechnicianController.php(110): view('technician/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 15:00:35 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: technician/dashboard]
+in APPPATH\Views\technician\dashboard.php on line 456.
+ 1 APPPATH\Views\technician\dashboard.php(456): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php', 456)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/dashboard', [], true)
+ 5 APPPATH\Controllers\TechnicianController.php(110): view('technician/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 15:00:37 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: technician/dashboard]
+in APPPATH\Views\technician\dashboard.php on line 456.
+ 1 APPPATH\Views\technician\dashboard.php(456): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php', 456)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/dashboard', [], true)
+ 5 APPPATH\Controllers\TechnicianController.php(110): view('technician/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 15:00:52 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: technician/dashboard]
+in APPPATH\Views\technician\dashboard.php on line 456.
+ 1 APPPATH\Views\technician\dashboard.php(456): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php', 456)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/dashboard', [], true)
+ 5 APPPATH\Controllers\TechnicianController.php(110): view('technician/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 15:01:02 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: technician/dashboard]
+in APPPATH\Views\technician\dashboard.php on line 456.
+ 1 APPPATH\Views\technician\dashboard.php(456): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php', 456)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/dashboard', [], true)
+ 5 APPPATH\Controllers\TechnicianController.php(110): view('technician/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 15:01:50 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: technician/dashboard]
+in APPPATH\Views\technician\dashboard.php on line 456.
+ 1 APPPATH\Views\technician\dashboard.php(456): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php', 456)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/dashboard', [], true)
+ 5 APPPATH\Controllers\TechnicianController.php(110): view('technician/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 15:04:17 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: technician/dashboard]
+in APPPATH\Views\technician\dashboard.php on line 160.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/dashboard', [], true)
+ 3 APPPATH\Controllers\TechnicianController.php(110): view('technician/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 15:05:11 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: technician/dashboard]
+in APPPATH\Views\technician\dashboard.php on line 456.
+ 1 APPPATH\Views\technician\dashboard.php(456): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php', 456)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/dashboard', [], true)
+ 5 APPPATH\Controllers\TechnicianController.php(110): view('technician/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 15:07:33 --> ErrorException: Undefined array key "app_first_name"
+[Method: GET, Route: technician/dashboard]
+in APPPATH\Views\technician\dashboard.php on line 456.
+ 1 APPPATH\Views\technician\dashboard.php(456): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "app_first_name"', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php', 456)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/dashboard', [], true)
+ 5 APPPATH\Controllers\TechnicianController.php(110): view('technician/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 15:08:20 --> ErrorException: Undefined array key "app_first_name"
+[Method: GET, Route: technician/dashboard]
+in APPPATH\Views\technician\dashboard.php on line 456.
+ 1 APPPATH\Views\technician\dashboard.php(456): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "app_first_name"', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php', 456)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/dashboard', [], true)
+ 5 APPPATH\Controllers\TechnicianController.php(110): view('technician/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 15:11:00 --> ErrorException: Undefined array key "app_first_name"
+[Method: GET, Route: technician/dashboard]
+in APPPATH\Views\technician\dashboard.php on line 456.
+ 1 APPPATH\Views\technician\dashboard.php(456): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "app_first_name"', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php', 456)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/dashboard', [], true)
+ 5 APPPATH\Controllers\TechnicianController.php(110): view('technician/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 15:12:56 --> ErrorException: Undefined array key "app_first_name"
+[Method: GET, Route: technician/dashboard]
+in APPPATH\Views\technician\dashboard.php on line 456.
+ 1 APPPATH\Views\technician\dashboard.php(456): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "app_first_name"', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php', 456)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/dashboard', [], true)
+ 5 APPPATH\Controllers\TechnicianController.php(110): view('technician/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 15:13:42 --> ErrorException: Undefined array key "app_first_name"
+[Method: GET, Route: technician/dashboard]
+in APPPATH\Views\technician\dashboard.php on line 456.
+ 1 APPPATH\Views\technician\dashboard.php(456): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "app_first_name"', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php', 456)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/dashboard', [], true)
+ 5 APPPATH\Controllers\TechnicianController.php(110): view('technician/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 15:20:37 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: technician/updateRepairStatus]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('technician/updateRepairStatus', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+ERROR - 2025-05-30 16:47:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`NULL` ASC' at line 4 in D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\app\Controllers\AdminController.php(498): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(933): App\Controllers\AdminController->subscribersList()
+#8 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-05-30 16:47:34 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`NULL` ASC' at line 4
+[Method: GET, Route: admin/subscribers]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `subscribers`
+WHERE `city` = :city:
+ORDER BY `account_number IS NOT` `NULL` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(498): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->subscribersList()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 16:47:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`NULL` ASC' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `subscribers`
+WHERE `city` = \'City of Malolos\'
+ORDER BY `account_number IS NOT` `NULL` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `subscribers`
+WHERE `city` = \'City of Malolos\'
+ORDER BY `account_number IS NOT` `NULL` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `subscribers`
+WHERE `city` = :city:
+ORDER BY `account_number IS NOT` `NULL` ASC', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\AdminController.php(498): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->subscribersList()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 16:47:34 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`NULL` ASC' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `subscribers`
+WHERE `city` = \'City of Malolos\'
+ORDER BY `account_number IS NOT` `NULL` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `subscribers`
+WHERE `city` = \'City of Malolos\'
+ORDER BY `account_number IS NOT` `NULL` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `subscribers`
+WHERE `city` = \'City of Malolos\'
+ORDER BY `account_number IS NOT` `NULL` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `subscribers`
+WHERE `city` = :city:
+ORDER BY `account_number IS NOT` `NULL` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AdminController.php(498): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->subscribersList()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+ERROR - 2025-05-30 16:49:51 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`NULL` ASC' at line 4 in D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\app\Controllers\AdminController.php(498): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(933): App\Controllers\AdminController->subscribersList()
+#8 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-05-30 16:49:51 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`NULL` ASC' at line 4
+[Method: GET, Route: admin/subscribers]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `subscribers`
+WHERE `city` = :city:
+ORDER BY `account_number IS NOT` `NULL` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(498): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->subscribersList()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 16:49:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`NULL` ASC' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `subscribers`
+WHERE `city` = \'City of Malolos\'
+ORDER BY `account_number IS NOT` `NULL` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `subscribers`
+WHERE `city` = \'City of Malolos\'
+ORDER BY `account_number IS NOT` `NULL` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `subscribers`
+WHERE `city` = :city:
+ORDER BY `account_number IS NOT` `NULL` ASC', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\AdminController.php(498): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->subscribersList()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 16:49:51 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`NULL` ASC' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `subscribers`
+WHERE `city` = \'City of Malolos\'
+ORDER BY `account_number IS NOT` `NULL` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `subscribers`
+WHERE `city` = \'City of Malolos\'
+ORDER BY `account_number IS NOT` `NULL` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `subscribers`
+WHERE `city` = \'City of Malolos\'
+ORDER BY `account_number IS NOT` `NULL` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `subscribers`
+WHERE `city` = :city:
+ORDER BY `account_number IS NOT` `NULL` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AdminController.php(498): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->subscribersList()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 17:09:50 --> ParseError: syntax error, unexpected token ","
+[Method: GET, Route: admin/subscribers]
+in APPPATH\Controllers\AdminController.php on line 526.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 17:10:17 --> ArgumentCountError: intval() expects at most 2 arguments, 3 given
+[Method: GET, Route: admin/predictAccountNumber/City%20of%20Malolos]
+in APPPATH\Controllers\AdminController.php on line 526.
+ 1 APPPATH\Controllers\AdminController.php(526): intval(19352, 6, '0')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->predictAccountNumber('City of Malolos')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-30 17:10:19 --> ArgumentCountError: intval() expects at most 2 arguments, 3 given
+[Method: GET, Route: admin/predictAccountNumber/City%20of%20Malolos]
+in APPPATH\Controllers\AdminController.php on line 526.
+ 1 APPPATH\Controllers\AdminController.php(526): intval(19352, 6, '0')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->predictAccountNumber('City of Malolos')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')

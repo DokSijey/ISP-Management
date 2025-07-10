@@ -1,0 +1,212 @@
+ERROR - 2025-06-27 11:54:31 --> mysqli_sql_exception: Unknown column 'bills.due_date' in 'field list' in D:\xampp\htdocs\ISP Management - ALLSTAR TECH - FINAL UPDATE\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\xampp\htdocs\ISP Management - ALLSTAR TECH - FINAL UPDATE\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `bills`....', 0)
+#1 D:\xampp\htdocs\ISP Management - ALLSTAR TECH - FINAL UPDATE\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bills`....')
+#2 D:\xampp\htdocs\ISP Management - ALLSTAR TECH - FINAL UPDATE\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bills`....')
+#3 D:\xampp\htdocs\ISP Management - ALLSTAR TECH - FINAL UPDATE\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `bills`....', Array, false)
+#4 D:\xampp\htdocs\ISP Management - ALLSTAR TECH - FINAL UPDATE\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ISP Management - ALLSTAR TECH - FINAL UPDATE\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ISP Management - ALLSTAR TECH - FINAL UPDATE\app\Models\BillsModel.php(43): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ISP Management - ALLSTAR TECH - FINAL UPDATE\app\Controllers\AdminController.php(1911): App\Models\BillsModel->getBillingByArea('City of Malolos')
+#8 D:\xampp\htdocs\ISP Management - ALLSTAR TECH - FINAL UPDATE\system\CodeIgniter.php(933): App\Controllers\AdminController->billings()
+#9 D:\xampp\htdocs\ISP Management - ALLSTAR TECH - FINAL UPDATE\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#10 D:\xampp\htdocs\ISP Management - ALLSTAR TECH - FINAL UPDATE\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ISP Management - ALLSTAR TECH - FINAL UPDATE\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ISP Management - ALLSTAR TECH - FINAL UPDATE\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ISP Management - ALLSTAR TECH - FINAL UPDATE\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\xampp\htdocs\ISP Management - ALLSTAR TECH - FINAL UPDATE\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-06-27 11:54:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'bills.due_date' in 'field list'
+[Method: GET, Route: admin/billings]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `bills`.*, `subscribers`.`city`, `subscribers`.`account_number`, CONCAT(subscribers.first_name, \' \', `subscribers`.`middle_name`, \' \', subscribers.last_name) AS full_name, CASE
+            WHEN bills.status = \'unpaid\' AND CURRENT_DATE() > bills.due_date THEN 1 ELSE 0
+        END AS is_overdue
+FROM `bills`
+JOIN `subscribers` ON `bills`.`subscriber_id` = `subscribers`.`id`
+WHERE `subscribers`.`city` = :subscribers.city:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\BillsModel.php(43): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\AdminController.php(1911): App\Models\BillsModel->getBillingByArea('City of Malolos')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->billings()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH - FINAL UPDATE\\public\\index.php')
+CRITICAL - 2025-06-27 11:54:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'bills.due_date' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bills`.*, `subscribers`.`city`, `subscribers`.`account_number`, CONCAT(subscribers.first_name, \' \', `subscribers`.`middle_name`, \' \', subscribers.last_name) AS full_name, CASE
+            WHEN bills.status = \'unpaid\' AND CURRENT_DATE() > bills.due_date THEN 1 ELSE 0
+        END AS is_overdue
+FROM `bills`
+JOIN `subscribers` ON `bills`.`subscriber_id` = `subscribers`.`id`
+WHERE `subscribers`.`city` = \'City of Malolos\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bills`.*, `subscribers`.`city`, `subscribers`.`account_number`, CONCAT(subscribers.first_name, \' \', `subscribers`.`middle_name`, \' \', subscribers.last_name) AS full_name, CASE
+            WHEN bills.status = \'unpaid\' AND CURRENT_DATE() > bills.due_date THEN 1 ELSE 0
+        END AS is_overdue
+FROM `bills`
+JOIN `subscribers` ON `bills`.`subscriber_id` = `subscribers`.`id`
+WHERE `subscribers`.`city` = \'City of Malolos\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `bills`.*, `subscribers`.`city`, `subscribers`.`account_number`, CONCAT(subscribers.first_name, \' \', `subscribers`.`middle_name`, \' \', subscribers.last_name) AS full_name, CASE
+            WHEN bills.status = \'unpaid\' AND CURRENT_DATE() > bills.due_date THEN 1 ELSE 0
+        END AS is_overdue
+FROM `bills`
+JOIN `subscribers` ON `bills`.`subscriber_id` = `subscribers`.`id`
+WHERE `subscribers`.`city` = :subscribers.city:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\BillsModel.php(43): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\AdminController.php(1911): App\Models\BillsModel->getBillingByArea('City of Malolos')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->billings()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH - FINAL UPDATE\\public\\index.php')
+CRITICAL - 2025-06-27 11:54:31 --> [Caused by] mysqli_sql_exception: Unknown column 'bills.due_date' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `bills`.*, `subscribers`.`city`, `subscribers`.`account_number`, CONCAT(subscribers.first_name, \' \', `subscribers`.`middle_name`, \' \', subscribers.last_name) AS full_name, CASE
+            WHEN bills.status = \'unpaid\' AND CURRENT_DATE() > bills.due_date THEN 1 ELSE 0
+        END AS is_overdue
+FROM `bills`
+JOIN `subscribers` ON `bills`.`subscriber_id` = `subscribers`.`id`
+WHERE `subscribers`.`city` = \'City of Malolos\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bills`.*, `subscribers`.`city`, `subscribers`.`account_number`, CONCAT(subscribers.first_name, \' \', `subscribers`.`middle_name`, \' \', subscribers.last_name) AS full_name, CASE
+            WHEN bills.status = \'unpaid\' AND CURRENT_DATE() > bills.due_date THEN 1 ELSE 0
+        END AS is_overdue
+FROM `bills`
+JOIN `subscribers` ON `bills`.`subscriber_id` = `subscribers`.`id`
+WHERE `subscribers`.`city` = \'City of Malolos\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bills`.*, `subscribers`.`city`, `subscribers`.`account_number`, CONCAT(subscribers.first_name, \' \', `subscribers`.`middle_name`, \' \', subscribers.last_name) AS full_name, CASE
+            WHEN bills.status = \'unpaid\' AND CURRENT_DATE() > bills.due_date THEN 1 ELSE 0
+        END AS is_overdue
+FROM `bills`
+JOIN `subscribers` ON `bills`.`subscriber_id` = `subscribers`.`id`
+WHERE `subscribers`.`city` = \'City of Malolos\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `bills`.*, `subscribers`.`city`, `subscribers`.`account_number`, CONCAT(subscribers.first_name, \' \', `subscribers`.`middle_name`, \' \', subscribers.last_name) AS full_name, CASE
+            WHEN bills.status = \'unpaid\' AND CURRENT_DATE() > bills.due_date THEN 1 ELSE 0
+        END AS is_overdue
+FROM `bills`
+JOIN `subscribers` ON `bills`.`subscriber_id` = `subscribers`.`id`
+WHERE `subscribers`.`city` = :subscribers.city:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\BillsModel.php(43): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\AdminController.php(1911): App\Models\BillsModel->getBillingByArea('City of Malolos')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->billings()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH - FINAL UPDATE\\public\\index.php')
+ERROR - 2025-06-27 11:54:40 --> mysqli_sql_exception: Unknown column 'bills.due_date' in 'field list' in D:\xampp\htdocs\ISP Management - ALLSTAR TECH - FINAL UPDATE\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\xampp\htdocs\ISP Management - ALLSTAR TECH - FINAL UPDATE\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `bills`....', 0)
+#1 D:\xampp\htdocs\ISP Management - ALLSTAR TECH - FINAL UPDATE\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bills`....')
+#2 D:\xampp\htdocs\ISP Management - ALLSTAR TECH - FINAL UPDATE\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bills`....')
+#3 D:\xampp\htdocs\ISP Management - ALLSTAR TECH - FINAL UPDATE\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `bills`....', Array, false)
+#4 D:\xampp\htdocs\ISP Management - ALLSTAR TECH - FINAL UPDATE\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ISP Management - ALLSTAR TECH - FINAL UPDATE\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ISP Management - ALLSTAR TECH - FINAL UPDATE\app\Models\BillsModel.php(43): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ISP Management - ALLSTAR TECH - FINAL UPDATE\app\Controllers\AdminController.php(1911): App\Models\BillsModel->getBillingByArea('City of Malolos')
+#8 D:\xampp\htdocs\ISP Management - ALLSTAR TECH - FINAL UPDATE\system\CodeIgniter.php(933): App\Controllers\AdminController->billings()
+#9 D:\xampp\htdocs\ISP Management - ALLSTAR TECH - FINAL UPDATE\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#10 D:\xampp\htdocs\ISP Management - ALLSTAR TECH - FINAL UPDATE\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ISP Management - ALLSTAR TECH - FINAL UPDATE\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ISP Management - ALLSTAR TECH - FINAL UPDATE\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ISP Management - ALLSTAR TECH - FINAL UPDATE\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\xampp\htdocs\ISP Management - ALLSTAR TECH - FINAL UPDATE\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-06-27 11:54:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'bills.due_date' in 'field list'
+[Method: GET, Route: admin/billings]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `bills`.*, `subscribers`.`city`, `subscribers`.`account_number`, CONCAT(subscribers.first_name, \' \', `subscribers`.`middle_name`, \' \', subscribers.last_name) AS full_name, CASE
+            WHEN bills.status = \'unpaid\' AND CURRENT_DATE() > bills.due_date THEN 1 ELSE 0
+        END AS is_overdue
+FROM `bills`
+JOIN `subscribers` ON `bills`.`subscriber_id` = `subscribers`.`id`
+WHERE `subscribers`.`city` = :subscribers.city:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\BillsModel.php(43): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\AdminController.php(1911): App\Models\BillsModel->getBillingByArea('City of Malolos')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->billings()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH - FINAL UPDATE\\public\\index.php')
+CRITICAL - 2025-06-27 11:54:40 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'bills.due_date' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bills`.*, `subscribers`.`city`, `subscribers`.`account_number`, CONCAT(subscribers.first_name, \' \', `subscribers`.`middle_name`, \' \', subscribers.last_name) AS full_name, CASE
+            WHEN bills.status = \'unpaid\' AND CURRENT_DATE() > bills.due_date THEN 1 ELSE 0
+        END AS is_overdue
+FROM `bills`
+JOIN `subscribers` ON `bills`.`subscriber_id` = `subscribers`.`id`
+WHERE `subscribers`.`city` = \'City of Malolos\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bills`.*, `subscribers`.`city`, `subscribers`.`account_number`, CONCAT(subscribers.first_name, \' \', `subscribers`.`middle_name`, \' \', subscribers.last_name) AS full_name, CASE
+            WHEN bills.status = \'unpaid\' AND CURRENT_DATE() > bills.due_date THEN 1 ELSE 0
+        END AS is_overdue
+FROM `bills`
+JOIN `subscribers` ON `bills`.`subscriber_id` = `subscribers`.`id`
+WHERE `subscribers`.`city` = \'City of Malolos\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `bills`.*, `subscribers`.`city`, `subscribers`.`account_number`, CONCAT(subscribers.first_name, \' \', `subscribers`.`middle_name`, \' \', subscribers.last_name) AS full_name, CASE
+            WHEN bills.status = \'unpaid\' AND CURRENT_DATE() > bills.due_date THEN 1 ELSE 0
+        END AS is_overdue
+FROM `bills`
+JOIN `subscribers` ON `bills`.`subscriber_id` = `subscribers`.`id`
+WHERE `subscribers`.`city` = :subscribers.city:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\BillsModel.php(43): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\AdminController.php(1911): App\Models\BillsModel->getBillingByArea('City of Malolos')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->billings()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH - FINAL UPDATE\\public\\index.php')
+CRITICAL - 2025-06-27 11:54:40 --> [Caused by] mysqli_sql_exception: Unknown column 'bills.due_date' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `bills`.*, `subscribers`.`city`, `subscribers`.`account_number`, CONCAT(subscribers.first_name, \' \', `subscribers`.`middle_name`, \' \', subscribers.last_name) AS full_name, CASE
+            WHEN bills.status = \'unpaid\' AND CURRENT_DATE() > bills.due_date THEN 1 ELSE 0
+        END AS is_overdue
+FROM `bills`
+JOIN `subscribers` ON `bills`.`subscriber_id` = `subscribers`.`id`
+WHERE `subscribers`.`city` = \'City of Malolos\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bills`.*, `subscribers`.`city`, `subscribers`.`account_number`, CONCAT(subscribers.first_name, \' \', `subscribers`.`middle_name`, \' \', subscribers.last_name) AS full_name, CASE
+            WHEN bills.status = \'unpaid\' AND CURRENT_DATE() > bills.due_date THEN 1 ELSE 0
+        END AS is_overdue
+FROM `bills`
+JOIN `subscribers` ON `bills`.`subscriber_id` = `subscribers`.`id`
+WHERE `subscribers`.`city` = \'City of Malolos\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bills`.*, `subscribers`.`city`, `subscribers`.`account_number`, CONCAT(subscribers.first_name, \' \', `subscribers`.`middle_name`, \' \', subscribers.last_name) AS full_name, CASE
+            WHEN bills.status = \'unpaid\' AND CURRENT_DATE() > bills.due_date THEN 1 ELSE 0
+        END AS is_overdue
+FROM `bills`
+JOIN `subscribers` ON `bills`.`subscriber_id` = `subscribers`.`id`
+WHERE `subscribers`.`city` = \'City of Malolos\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `bills`.*, `subscribers`.`city`, `subscribers`.`account_number`, CONCAT(subscribers.first_name, \' \', `subscribers`.`middle_name`, \' \', subscribers.last_name) AS full_name, CASE
+            WHEN bills.status = \'unpaid\' AND CURRENT_DATE() > bills.due_date THEN 1 ELSE 0
+        END AS is_overdue
+FROM `bills`
+JOIN `subscribers` ON `bills`.`subscriber_id` = `subscribers`.`id`
+WHERE `subscribers`.`city` = :subscribers.city:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\BillsModel.php(43): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\AdminController.php(1911): App\Models\BillsModel->getBillingByArea('City of Malolos')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->billings()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH - FINAL UPDATE\\public\\index.php')

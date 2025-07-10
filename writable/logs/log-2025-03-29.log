@@ -1,0 +1,293 @@
+CRITICAL - 2025-03-29 04:03:40 --> ParseError: syntax error, unexpected token "."
+[Method: GET, Route: admin/applications]
+in APPPATH\Views\admin\applications.php on line 31.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/applications', [], true)
+ 3 APPPATH\Controllers\AdminController.php(75): view('admin/applications', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->applications()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-03-29 23:11:03 --> ErrorException: Undefined array key "contact_number"
+[Method: GET, Route: admin/applications]
+in APPPATH\Views\admin\applications.php on line 31.
+ 1 APPPATH\Views\admin\applications.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contact_number"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\applications.php', 31)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\applications.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/applications', [], true)
+ 5 APPPATH\Controllers\AdminController.php(75): view('admin/applications', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->applications()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-03-29 23:30:27 --> ErrorException: Undefined array key "contact_number"
+[Method: GET, Route: admin/applications]
+in APPPATH\Views\admin\applications.php on line 31.
+ 1 APPPATH\Views\admin\applications.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contact_number"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\applications.php', 31)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\applications.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/applications', [], true)
+ 5 APPPATH\Controllers\AdminController.php(75): view('admin/applications', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->applications()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-03-29 23:30:41 --> ErrorException: Undefined array key "contact_number"
+[Method: GET, Route: admin/applications]
+in APPPATH\Views\admin\applications.php on line 31.
+ 1 APPPATH\Views\admin\applications.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contact_number"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\applications.php', 31)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\applications.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/applications', [], true)
+ 5 APPPATH\Controllers\AdminController.php(75): view('admin/applications', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->applications()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-03-29 23:30:44 --> ErrorException: Undefined array key "contact_number"
+[Method: GET, Route: admin/applications]
+in APPPATH\Views\admin\applications.php on line 31.
+ 1 APPPATH\Views\admin\applications.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contact_number"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\applications.php', 31)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\applications.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/applications', [], true)
+ 5 APPPATH\Controllers\AdminController.php(75): view('admin/applications', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->applications()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-03-29 23:30:45 --> ErrorException: Undefined array key "contact_number"
+[Method: GET, Route: admin/applications]
+in APPPATH\Views\admin\applications.php on line 31.
+ 1 APPPATH\Views\admin\applications.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contact_number"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\applications.php', 31)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\applications.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/applications', [], true)
+ 5 APPPATH\Controllers\AdminController.php(75): view('admin/applications', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->applications()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-03-29 23:31:11 --> ErrorException: Undefined array key "contact_number"
+[Method: GET, Route: admin/applications]
+in APPPATH\Views\admin\applications.php on line 31.
+ 1 APPPATH\Views\admin\applications.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contact_number"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\applications.php', 31)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\applications.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/applications', [], true)
+ 5 APPPATH\Controllers\AdminController.php(75): view('admin/applications', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->applications()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-03-29 23:31:21 --> ErrorException: Undefined array key "contact_number"
+[Method: GET, Route: admin/applications]
+in APPPATH\Views\admin\applications.php on line 31.
+ 1 APPPATH\Views\admin\applications.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contact_number"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\applications.php', 31)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\applications.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/applications', [], true)
+ 5 APPPATH\Controllers\AdminController.php(75): view('admin/applications', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->applications()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-03-29 23:31:25 --> ErrorException: Undefined array key "contact_number"
+[Method: GET, Route: admin/applications]
+in APPPATH\Views\admin\applications.php on line 31.
+ 1 APPPATH\Views\admin\applications.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contact_number"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\applications.php', 31)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\applications.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/applications', [], true)
+ 5 APPPATH\Controllers\AdminController.php(75): view('admin/applications', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->applications()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-03-29 23:31:49 --> ErrorException: Undefined array key "contact_number"
+[Method: GET, Route: admin/applications]
+in APPPATH\Views\admin\applications.php on line 31.
+ 1 APPPATH\Views\admin\applications.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contact_number"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\applications.php', 31)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\applications.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/applications', [], true)
+ 5 APPPATH\Controllers\AdminController.php(75): view('admin/applications', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->applications()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-03-29 23:33:07 --> ErrorException: Undefined array key "contact_number"
+[Method: GET, Route: admin/applications]
+in APPPATH\Views\admin\applications.php on line 33.
+ 1 APPPATH\Views\admin\applications.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contact_number"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\applications.php', 33)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\applications.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/applications', [], true)
+ 5 APPPATH\Controllers\AdminController.php(75): view('admin/applications', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->applications()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-03-29 23:35:17 --> ErrorException: Undefined array key "contact_number"
+[Method: GET, Route: admin/applications]
+in APPPATH\Views\admin\applications.php on line 32.
+ 1 APPPATH\Views\admin\applications.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contact_number"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\applications.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\applications.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/applications', [], true)
+ 5 APPPATH\Controllers\AdminController.php(75): view('admin/applications', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->applications()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-03-29 23:35:17 --> ErrorException: Undefined array key "contact_number"
+[Method: GET, Route: admin/applications]
+in APPPATH\Views\admin\applications.php on line 32.
+ 1 APPPATH\Views\admin\applications.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contact_number"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\applications.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\applications.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/applications', [], true)
+ 5 APPPATH\Controllers\AdminController.php(75): view('admin/applications', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->applications()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-03-29 23:37:27 --> ErrorException: Undefined array key "contact_number"
+[Method: GET, Route: admin/applications]
+in APPPATH\Views\admin\applications.php on line 33.
+ 1 APPPATH\Views\admin\applications.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contact_number"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\applications.php', 33)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\applications.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/applications', [], true)
+ 5 APPPATH\Controllers\AdminController.php(75): view('admin/applications', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->applications()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-03-29 23:38:08 --> ErrorException: Undefined array key "contact_number"
+[Method: GET, Route: admin/applications]
+in APPPATH\Views\admin\applications.php on line 35.
+ 1 APPPATH\Views\admin\applications.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contact_number"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\applications.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\applications.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/applications', [], true)
+ 5 APPPATH\Controllers\AdminController.php(75): view('admin/applications', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->applications()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-03-29 23:38:09 --> ErrorException: Undefined array key "contact_number"
+[Method: GET, Route: admin/applications]
+in APPPATH\Views\admin\applications.php on line 35.
+ 1 APPPATH\Views\admin\applications.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contact_number"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\applications.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\applications.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/applications', [], true)
+ 5 APPPATH\Controllers\AdminController.php(75): view('admin/applications', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->applications()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-03-29 23:38:11 --> ErrorException: Undefined array key "contact_number"
+[Method: GET, Route: admin/applications]
+in APPPATH\Views\admin\applications.php on line 35.
+ 1 APPPATH\Views\admin\applications.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contact_number"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\applications.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\applications.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/applications', [], true)
+ 5 APPPATH\Controllers\AdminController.php(75): view('admin/applications', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->applications()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-03-29 23:46:13 --> Error: Class "App\Models\ApplicationsModel" not found
+[Method: GET, Route: admin/login]
+in APPPATH\Controllers\AdminController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-03-29 23:46:13 --> Error: Class "App\Models\ApplicationsModel" not found
+[Method: GET, Route: admin/login]
+in APPPATH\Controllers\AdminController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-03-29 23:48:53 --> Error: Class "App\Models\ApplicationsModel" not found
+[Method: GET, Route: admin/login]
+in APPPATH\Controllers\AdminController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-03-29 23:48:54 --> Error: Class "App\Models\ApplicationsModel" not found
+[Method: GET, Route: admin/login]
+in APPPATH\Controllers\AdminController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')

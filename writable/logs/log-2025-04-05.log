@@ -1,0 +1,135 @@
+CRITICAL - 2025-04-05 06:53:04 --> ErrorException: Undefined variable $tickets
+[Method: GET, Route: admin/install-tickets]
+in APPPATH\Views\admin\install_tickets.php on line 40.
+ 1 APPPATH\Views\admin\install_tickets.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tickets', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\install_tickets.php', 40)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\install_tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/install_tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(325): view('admin/install_tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->installTickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-04-05 06:53:50 --> ErrorException: Undefined variable $tickets
+[Method: GET, Route: admin/install-tickets]
+in APPPATH\Views\admin\install_tickets.php on line 40.
+ 1 APPPATH\Views\admin\install_tickets.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tickets', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\install_tickets.php', 40)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\install_tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/install_tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(325): view('admin/install_tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->installTickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-04-05 06:53:53 --> ErrorException: Undefined variable $tickets
+[Method: GET, Route: admin/install-tickets]
+in APPPATH\Views\admin\install_tickets.php on line 40.
+ 1 APPPATH\Views\admin\install_tickets.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tickets', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\install_tickets.php', 40)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\install_tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/install_tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(325): view('admin/install_tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->installTickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-04-05 06:55:16 --> ErrorException: Undefined variable $tickets
+[Method: GET, Route: admin/install-tickets]
+in APPPATH\Views\admin\install_tickets.php on line 40.
+ 1 APPPATH\Views\admin\install_tickets.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tickets', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\install_tickets.php', 40)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\install_tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/install_tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(325): view('admin/install_tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->installTickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-04-05 06:55:17 --> ErrorException: Undefined variable $tickets
+[Method: GET, Route: admin/install-tickets]
+in APPPATH\Views\admin\install_tickets.php on line 40.
+ 1 APPPATH\Views\admin\install_tickets.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tickets', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\install_tickets.php', 40)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\install_tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/install_tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(325): view('admin/install_tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->installTickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-04-05 06:56:56 --> ErrorException: Undefined variable $tickets
+[Method: GET, Route: admin/install-tickets]
+in APPPATH\Views\admin\install_tickets.php on line 40.
+ 1 APPPATH\Views\admin\install_tickets.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tickets', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\install_tickets.php', 40)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\install_tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/install_tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(325): view('admin/install_tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->installTickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-04-05 06:57:00 --> ErrorException: Undefined variable $tickets
+[Method: GET, Route: admin/install-tickets]
+in APPPATH\Views\admin\install_tickets.php on line 40.
+ 1 APPPATH\Views\admin\install_tickets.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tickets', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\install_tickets.php', 40)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\install_tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/install_tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(325): view('admin/install_tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->installTickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-04-05 06:57:03 --> ErrorException: Undefined variable $tickets
+[Method: GET, Route: admin/install-tickets]
+in APPPATH\Views\admin\install_tickets.php on line 40.
+ 1 APPPATH\Views\admin\install_tickets.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tickets', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\install_tickets.php', 40)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\install_tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/install_tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(325): view('admin/install_tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->installTickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-04-05 06:57:37 --> ErrorException: Undefined variable $tickets
+[Method: GET, Route: admin/install-tickets]
+in APPPATH\Views\admin\install_tickets.php on line 40.
+ 1 APPPATH\Views\admin\install_tickets.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tickets', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\install_tickets.php', 40)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\install_tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/install_tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(325): view('admin/install_tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->installTickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')

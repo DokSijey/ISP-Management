@@ -1,0 +1,505 @@
+CRITICAL - 2025-05-06 15:36:51 --> ErrorException: Undefined property: App\Controllers\AdminController::$ticketModel
+[Method: GET, Route: admin/repair-tickets]
+in APPPATH\Controllers\AdminController.php on line 586.
+ 1 APPPATH\Controllers\AdminController.php(586): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\AdminController::$ticketModel', 'D:\\xampp\\htdocs\\ci4\\app\\Controllers\\AdminController.php', 586)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-06 15:36:56 --> ErrorException: Undefined property: App\Controllers\AdminController::$ticketModel
+[Method: GET, Route: admin/repair-tickets]
+in APPPATH\Controllers\AdminController.php on line 586.
+ 1 APPPATH\Controllers\AdminController.php(586): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\AdminController::$ticketModel', 'D:\\xampp\\htdocs\\ci4\\app\\Controllers\\AdminController.php', 586)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-06 15:38:01 --> ErrorException: Undefined property: App\Controllers\AdminController::$ticketModel
+[Method: GET, Route: admin/repair-tickets]
+in APPPATH\Controllers\AdminController.php on line 586.
+ 1 APPPATH\Controllers\AdminController.php(586): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\AdminController::$ticketModel', 'D:\\xampp\\htdocs\\ci4\\app\\Controllers\\AdminController.php', 586)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-06 15:39:20 --> ErrorException: Undefined property: App\Controllers\AdminController::$ticketModel
+[Method: GET, Route: admin/repair-tickets]
+in APPPATH\Controllers\AdminController.php on line 586.
+ 1 APPPATH\Controllers\AdminController.php(586): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\AdminController::$ticketModel', 'D:\\xampp\\htdocs\\ci4\\app\\Controllers\\AdminController.php', 586)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-06 15:39:21 --> ErrorException: Undefined property: App\Controllers\AdminController::$ticketModel
+[Method: GET, Route: admin/repair-tickets]
+in APPPATH\Controllers\AdminController.php on line 586.
+ 1 APPPATH\Controllers\AdminController.php(586): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\AdminController::$ticketModel', 'D:\\xampp\\htdocs\\ci4\\app\\Controllers\\AdminController.php', 586)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-06 15:39:25 --> ErrorException: Undefined property: App\Controllers\AdminController::$ticketModel
+[Method: GET, Route: admin/repair-tickets]
+in APPPATH\Controllers\AdminController.php on line 586.
+ 1 APPPATH\Controllers\AdminController.php(586): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\AdminController::$ticketModel', 'D:\\xampp\\htdocs\\ci4\\app\\Controllers\\AdminController.php', 586)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+ERROR - 2025-05-06 15:45:38 --> mysqli_sql_exception: Unknown column 'subscribers.area' in 'where clause' in D:\xampp\htdocs\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\xampp\htdocs\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `repair_...', 0)
+#1 D:\xampp\htdocs\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `repair_...')
+#2 D:\xampp\htdocs\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `repair_...')
+#3 D:\xampp\htdocs\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `repair_...', Array, false)
+#4 D:\xampp\htdocs\ci4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci4\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ci4\app\Controllers\AdminController.php(592): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ci4\system\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+#8 D:\xampp\htdocs\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 D:\xampp\htdocs\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\xampp\htdocs\ci4\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-05-06 15:45:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'subscribers.area' in 'where clause'
+[Method: GET, Route: admin/repair-tickets]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `repair_tickets`.*, `subscribers`.`first_name`, `subscribers`.`last_name`, `subscribers`.`contact_number1`, `subscribers`.`address`, `subscribers`.`city`, `subscribers`.`plan`
+FROM `repair_tickets`
+JOIN `subscribers` ON `subscribers`.`id` = `repair_tickets`.`subscriber_id`
+WHERE `subscribers`.`area` = :subscribers.area:
+ORDER BY `repair_tickets`.`created_at` DESC', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(592): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-06 15:45:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'subscribers.area' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `repair_tickets`.*, `subscribers`.`first_name`, `subscribers`.`last_name`, `subscribers`.`contact_number1`, `subscribers`.`address`, `subscribers`.`city`, `subscribers`.`plan`
+FROM `repair_tickets`
+JOIN `subscribers` ON `subscribers`.`id` = `repair_tickets`.`subscriber_id`
+WHERE `subscribers`.`area` = \'City of Malolos\'
+ORDER BY `repair_tickets`.`created_at` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `repair_tickets`.*, `subscribers`.`first_name`, `subscribers`.`last_name`, `subscribers`.`contact_number1`, `subscribers`.`address`, `subscribers`.`city`, `subscribers`.`plan`
+FROM `repair_tickets`
+JOIN `subscribers` ON `subscribers`.`id` = `repair_tickets`.`subscriber_id`
+WHERE `subscribers`.`area` = \'City of Malolos\'
+ORDER BY `repair_tickets`.`created_at` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `repair_tickets`.*, `subscribers`.`first_name`, `subscribers`.`last_name`, `subscribers`.`contact_number1`, `subscribers`.`address`, `subscribers`.`city`, `subscribers`.`plan`
+FROM `repair_tickets`
+JOIN `subscribers` ON `subscribers`.`id` = `repair_tickets`.`subscriber_id`
+WHERE `subscribers`.`area` = :subscribers.area:
+ORDER BY `repair_tickets`.`created_at` DESC', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\AdminController.php(592): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-06 15:45:38 --> [Caused by] mysqli_sql_exception: Unknown column 'subscribers.area' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `repair_tickets`.*, `subscribers`.`first_name`, `subscribers`.`last_name`, `subscribers`.`contact_number1`, `subscribers`.`address`, `subscribers`.`city`, `subscribers`.`plan`
+FROM `repair_tickets`
+JOIN `subscribers` ON `subscribers`.`id` = `repair_tickets`.`subscriber_id`
+WHERE `subscribers`.`area` = \'City of Malolos\'
+ORDER BY `repair_tickets`.`created_at` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `repair_tickets`.*, `subscribers`.`first_name`, `subscribers`.`last_name`, `subscribers`.`contact_number1`, `subscribers`.`address`, `subscribers`.`city`, `subscribers`.`plan`
+FROM `repair_tickets`
+JOIN `subscribers` ON `subscribers`.`id` = `repair_tickets`.`subscriber_id`
+WHERE `subscribers`.`area` = \'City of Malolos\'
+ORDER BY `repair_tickets`.`created_at` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `repair_tickets`.*, `subscribers`.`first_name`, `subscribers`.`last_name`, `subscribers`.`contact_number1`, `subscribers`.`address`, `subscribers`.`city`, `subscribers`.`plan`
+FROM `repair_tickets`
+JOIN `subscribers` ON `subscribers`.`id` = `repair_tickets`.`subscriber_id`
+WHERE `subscribers`.`area` = \'City of Malolos\'
+ORDER BY `repair_tickets`.`created_at` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `repair_tickets`.*, `subscribers`.`first_name`, `subscribers`.`last_name`, `subscribers`.`contact_number1`, `subscribers`.`address`, `subscribers`.`city`, `subscribers`.`plan`
+FROM `repair_tickets`
+JOIN `subscribers` ON `subscribers`.`id` = `repair_tickets`.`subscriber_id`
+WHERE `subscribers`.`area` = :subscribers.area:
+ORDER BY `repair_tickets`.`created_at` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AdminController.php(592): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-06 15:50:25 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "repair_ticket.php"
+[Method: GET, Route: admin/repair-tickets]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('repair_ticket.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('repair_ticket', [], true)
+ 3 APPPATH\Controllers\AdminController.php(594): view('repair_ticket', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-06 15:53:00 --> ErrorException: Undefined array key "ticket_id"
+[Method: GET, Route: admin/repair-tickets]
+in APPPATH\Views\admin\repair_tickets.php on line 31.
+ 1 APPPATH\Views\admin\repair_tickets.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ticket_id"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\repair_tickets.php', 31)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\repair_tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/repair_tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(598): view('admin/repair_tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-06 15:53:02 --> ErrorException: Undefined array key "ticket_id"
+[Method: GET, Route: admin/repair-tickets]
+in APPPATH\Views\admin\repair_tickets.php on line 31.
+ 1 APPPATH\Views\admin\repair_tickets.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ticket_id"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\repair_tickets.php', 31)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\repair_tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/repair_tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(598): view('admin/repair_tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-06 15:53:02 --> ErrorException: Undefined array key "ticket_id"
+[Method: GET, Route: admin/repair-tickets]
+in APPPATH\Views\admin\repair_tickets.php on line 31.
+ 1 APPPATH\Views\admin\repair_tickets.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ticket_id"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\repair_tickets.php', 31)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\repair_tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/repair_tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(598): view('admin/repair_tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-06 16:05:16 --> ErrorException: Undefined array key "first_name"
+[Method: GET, Route: admin/repair-tickets]
+in APPPATH\Views\admin\repair_tickets.php on line 44.
+ 1 APPPATH\Views\admin\repair_tickets.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "first_name"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\repair_tickets.php', 44)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\repair_tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/repair_tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(590): view('admin/repair_tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-06 16:05:21 --> ErrorException: Undefined array key "first_name"
+[Method: GET, Route: admin/repair-tickets]
+in APPPATH\Views\admin\repair_tickets.php on line 44.
+ 1 APPPATH\Views\admin\repair_tickets.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "first_name"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\repair_tickets.php', 44)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\repair_tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/repair_tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(590): view('admin/repair_tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-06 16:06:02 --> ErrorException: Undefined array key "first_name"
+[Method: GET, Route: admin/repair-tickets]
+in APPPATH\Views\admin\repair_tickets.php on line 44.
+ 1 APPPATH\Views\admin\repair_tickets.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "first_name"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\repair_tickets.php', 44)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\repair_tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/repair_tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(590): view('admin/repair_tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-06 16:06:26 --> ErrorException: Undefined array key "first_name"
+[Method: GET, Route: admin/repair-tickets]
+in APPPATH\Views\admin\repair_tickets.php on line 44.
+ 1 APPPATH\Views\admin\repair_tickets.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "first_name"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\repair_tickets.php', 44)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\repair_tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/repair_tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(591): view('admin/repair_tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-06 16:06:27 --> ErrorException: Undefined array key "first_name"
+[Method: GET, Route: admin/repair-tickets]
+in APPPATH\Views\admin\repair_tickets.php on line 44.
+ 1 APPPATH\Views\admin\repair_tickets.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "first_name"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\repair_tickets.php', 44)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\repair_tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/repair_tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(591): view('admin/repair_tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-06 16:07:16 --> Error: Class "App\Controllers\RepairTicketModel" not found
+[Method: GET, Route: admin/repair-tickets]
+in APPPATH\Controllers\AdminController.php on line 585.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-06 16:07:55 --> Error: Class "App\Controllers\RepairTicketModel" not found
+[Method: GET, Route: admin/repair-tickets]
+in APPPATH\Controllers\AdminController.php on line 585.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-06 16:07:58 --> Error: Class "App\Controllers\RepairTicketModel" not found
+[Method: GET, Route: admin/repair-tickets]
+in APPPATH\Controllers\AdminController.php on line 585.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-06 16:08:40 --> ErrorException: Undefined array key "first_name"
+[Method: GET, Route: admin/repair-tickets]
+in APPPATH\Views\admin\repair_tickets.php on line 32.
+ 1 APPPATH\Views\admin\repair_tickets.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "first_name"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\repair_tickets.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\repair_tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/repair_tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(599): view('admin/repair_tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-06 16:09:16 --> ErrorException: Undefined array key "first_name"
+[Method: GET, Route: admin/repair-tickets]
+in APPPATH\Views\admin\repair_tickets.php on line 32.
+ 1 APPPATH\Views\admin\repair_tickets.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "first_name"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\repair_tickets.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\repair_tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/repair_tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(597): view('admin/repair_tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-06 16:09:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: GET, Route: admin/rescheduled-tickets]
+in SYSTEMPATH\Model.php on line 456.
+ 1 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\AdminController.php(537): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->rescheduledTickets()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-06 16:09:46 --> ErrorException: Undefined array key "first_name"
+[Method: GET, Route: admin/repair-tickets]
+in APPPATH\Views\admin\repair_tickets.php on line 32.
+ 1 APPPATH\Views\admin\repair_tickets.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "first_name"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\repair_tickets.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\repair_tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/repair_tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(597): view('admin/repair_tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+ERROR - 2025-05-06 16:17:45 --> mysqli_sql_exception: Unknown column 'schedule_date' in 'field list' in D:\xampp\htdocs\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\xampp\htdocs\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `repair_...', 0)
+#1 D:\xampp\htdocs\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `repair_...')
+#2 D:\xampp\htdocs\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `repair_...')
+#3 D:\xampp\htdocs\ci4\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `repair_...', Array, false)
+#4 D:\xampp\htdocs\ci4\app\Controllers\AdminController.php(645): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\xampp\htdocs\ci4\system\CodeIgniter.php(933): App\Controllers\AdminController->updateSchedule('2', '2025-05-07')
+#6 D:\xampp\htdocs\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#7 D:\xampp\htdocs\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 D:\xampp\htdocs\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 D:\xampp\htdocs\ci4\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-05-06 16:17:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'schedule_date' in 'field list'
+[Method: GET, Route: admin/repair/update_schedule/2/2025-05-07]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `repair_tickets` SET `schedule_date` = :schedule_date:, `status` = :status:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Controllers\AdminController.php(645): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->updateSchedule('2', '2025-05-07')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-06 16:17:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'schedule_date' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `repair_tickets` SET `schedule_date` = \'2025-05-07\', `status` = \'Open\'
+WHERE `id` = \'2\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `repair_tickets` SET `schedule_date` = \'2025-05-07\', `status` = \'Open\'
+WHERE `id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `repair_tickets` SET `schedule_date` = :schedule_date:, `status` = :status:
+WHERE `id` = :id:', [...], false)
+ 4 APPPATH\Controllers\AdminController.php(645): CodeIgniter\Database\BaseBuilder->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->updateSchedule('2', '2025-05-07')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-06 16:17:45 --> [Caused by] mysqli_sql_exception: Unknown column 'schedule_date' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `repair_tickets` SET `schedule_date` = \'2025-05-07\', `status` = \'Open\'
+WHERE `id` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `repair_tickets` SET `schedule_date` = \'2025-05-07\', `status` = \'Open\'
+WHERE `id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `repair_tickets` SET `schedule_date` = \'2025-05-07\', `status` = \'Open\'
+WHERE `id` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `repair_tickets` SET `schedule_date` = :schedule_date:, `status` = :status:
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH\Controllers\AdminController.php(645): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->updateSchedule('2', '2025-05-07')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+ERROR - 2025-05-06 16:17:51 --> mysqli_sql_exception: Unknown column 'schedule_date' in 'field list' in D:\xampp\htdocs\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\xampp\htdocs\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `repair_...', 0)
+#1 D:\xampp\htdocs\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `repair_...')
+#2 D:\xampp\htdocs\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `repair_...')
+#3 D:\xampp\htdocs\ci4\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `repair_...', Array, false)
+#4 D:\xampp\htdocs\ci4\app\Controllers\AdminController.php(645): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\xampp\htdocs\ci4\system\CodeIgniter.php(933): App\Controllers\AdminController->updateSchedule('2', '2025-05-07')
+#6 D:\xampp\htdocs\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#7 D:\xampp\htdocs\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 D:\xampp\htdocs\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 D:\xampp\htdocs\ci4\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-05-06 16:17:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'schedule_date' in 'field list'
+[Method: GET, Route: admin/repair/update_schedule/2/2025-05-07]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `repair_tickets` SET `schedule_date` = :schedule_date:, `status` = :status:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Controllers\AdminController.php(645): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->updateSchedule('2', '2025-05-07')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-06 16:17:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'schedule_date' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `repair_tickets` SET `schedule_date` = \'2025-05-07\', `status` = \'Open\'
+WHERE `id` = \'2\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `repair_tickets` SET `schedule_date` = \'2025-05-07\', `status` = \'Open\'
+WHERE `id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `repair_tickets` SET `schedule_date` = :schedule_date:, `status` = :status:
+WHERE `id` = :id:', [...], false)
+ 4 APPPATH\Controllers\AdminController.php(645): CodeIgniter\Database\BaseBuilder->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->updateSchedule('2', '2025-05-07')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-06 16:17:51 --> [Caused by] mysqli_sql_exception: Unknown column 'schedule_date' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `repair_tickets` SET `schedule_date` = \'2025-05-07\', `status` = \'Open\'
+WHERE `id` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `repair_tickets` SET `schedule_date` = \'2025-05-07\', `status` = \'Open\'
+WHERE `id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `repair_tickets` SET `schedule_date` = \'2025-05-07\', `status` = \'Open\'
+WHERE `id` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `repair_tickets` SET `schedule_date` = :schedule_date:, `status` = :status:
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH\Controllers\AdminController.php(645): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->updateSchedule('2', '2025-05-07')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')

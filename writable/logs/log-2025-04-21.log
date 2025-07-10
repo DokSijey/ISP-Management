@@ -1,0 +1,15 @@
+CRITICAL - 2025-04-21 00:04:07 --> ErrorException: Undefined array key "barangay"
+[Method: GET, Route: admin/subscribers]
+in APPPATH\Views\admin\subscribers_list.php on line 40.
+ 1 APPPATH\Views\admin\subscribers_list.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "barangay"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\subscribers_list.php', 40)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\subscribers_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/subscribers_list', [], true)
+ 5 APPPATH\Controllers\AdminController.php(247): view('admin/subscribers_list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->subscribersList()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')

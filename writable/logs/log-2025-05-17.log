@@ -1,0 +1,264 @@
+CRITICAL - 2025-05-17 02:18:55 --> ParseError: syntax error, unexpected token "=>"
+[Method: GET, Route: admin/finance/create-record]
+in APPPATH\Controllers\AdminController.php on line 1590.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp\\htdocs\\ci4\\app\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-17 06:41:14 --> ErrorException: Undefined variable $type
+[Method: GET, Route: admin/finance/create]
+in APPPATH\Views\admin\finance\create_record.php on line 15.
+ 1 APPPATH\Views\admin\finance\create_record.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $type', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\finance\\create_record.php', 15)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\finance\\create_record.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/create_record', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1585): view('admin/finance/create_record')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->showCreateFinanceForm()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-17 06:41:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "finance/create_record.php"
+[Method: GET, Route: admin/finance/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('finance/create_record.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('finance/create_record', [], true)
+ 3 APPPATH\Controllers\AdminController.php(1585): view('finance/create_record')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->showCreateFinanceForm()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-17 06:42:14 --> ErrorException: Undefined variable $type
+[Method: GET, Route: admin/finance/create_record]
+in APPPATH\Views\admin\finance\create_record.php on line 15.
+ 1 APPPATH\Views\admin\finance\create_record.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $type', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\finance\\create_record.php', 15)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\finance\\create_record.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/create_record', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1585): view('admin/finance/create_record')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->showCreateFinanceForm()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-17 06:44:31 --> ErrorException: Undefined variable $type
+[Method: GET, Route: admin/finance/create]
+in APPPATH\Views\admin\finance\create_record.php on line 15.
+ 1 APPPATH\Views\admin\finance\create_record.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $type', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\finance\\create_record.php', 15)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\finance\\create_record.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/create_record', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1585): view('admin/finance/create_record')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->showCreateFinanceForm()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-17 06:45:09 --> ErrorException: Undefined variable $type
+[Method: GET, Route: admin/finance/create]
+in APPPATH\Views\admin\finance\create_record.php on line 15.
+ 1 APPPATH\Views\admin\finance\create_record.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $type', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\finance\\create_record.php', 15)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\finance\\create_record.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/create_record', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1585): view('admin/finance/create_record')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->showCreateFinanceForm()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-17 06:45:10 --> ErrorException: Undefined variable $type
+[Method: GET, Route: admin/finance/create]
+in APPPATH\Views\admin\finance\create_record.php on line 15.
+ 1 APPPATH\Views\admin\finance\create_record.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $type', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\finance\\create_record.php', 15)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\finance\\create_record.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/create_record', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1585): view('admin/finance/create_record')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->showCreateFinanceForm()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-17 06:45:10 --> ErrorException: Undefined variable $type
+[Method: GET, Route: admin/finance/create]
+in APPPATH\Views\admin\finance\create_record.php on line 15.
+ 1 APPPATH\Views\admin\finance\create_record.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $type', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\finance\\create_record.php', 15)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\finance\\create_record.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/create_record', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1585): view('admin/finance/create_record')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->showCreateFinanceForm()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-17 06:45:38 --> ErrorException: Undefined variable $type
+[Method: GET, Route: admin/finance/create]
+in APPPATH\Views\admin\finance\create_record.php on line 15.
+ 1 APPPATH\Views\admin\finance\create_record.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $type', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\finance\\create_record.php', 15)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\finance\\create_record.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/create_record', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1585): view('admin/finance/create_record')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->showCreateFinanceForm()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-17 06:45:38 --> ErrorException: Undefined variable $type
+[Method: GET, Route: admin/finance/create]
+in APPPATH\Views\admin\finance\create_record.php on line 15.
+ 1 APPPATH\Views\admin\finance\create_record.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $type', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\finance\\create_record.php', 15)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\finance\\create_record.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/create_record', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1585): view('admin/finance/create_record')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->showCreateFinanceForm()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-17 06:45:39 --> ErrorException: Undefined variable $type
+[Method: GET, Route: admin/finance/create]
+in APPPATH\Views\admin\finance\create_record.php on line 15.
+ 1 APPPATH\Views\admin\finance\create_record.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $type', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\finance\\create_record.php', 15)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\finance\\create_record.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/create_record', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1585): view('admin/finance/create_record')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->showCreateFinanceForm()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-17 06:47:09 --> ErrorException: Undefined variable $type
+[Method: GET, Route: admin/finance/create]
+in APPPATH\Views\admin\finance\create_record.php on line 15.
+ 1 APPPATH\Views\admin\finance\create_record.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $type', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\finance\\create_record.php', 15)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\finance\\create_record.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/create_record', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1585): view('admin/finance/create_record')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->showCreateFinanceForm()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-17 07:45:00 --> ErrorException: Undefined array key "account_number"
+[Method: POST, Route: admin/mark-paid]
+in APPPATH\Controllers\AdminController.php on line 1329.
+ 1 APPPATH\Controllers\AdminController.php(1329): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "account_number"', 'D:\\xampp\\htdocs\\ci4\\app\\Controllers\\AdminController.php', 1329)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->markPaid()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-17 07:47:57 --> ErrorException: Undefined array key "account_number"
+[Method: POST, Route: admin/mark-paid]
+in APPPATH\Controllers\AdminController.php on line 1330.
+ 1 APPPATH\Controllers\AdminController.php(1330): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "account_number"', 'D:\\xampp\\htdocs\\ci4\\app\\Controllers\\AdminController.php', 1330)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->markPaid()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-17 07:48:25 --> ErrorException: Undefined array key "account_number"
+[Method: POST, Route: admin/mark-paid]
+in APPPATH\Controllers\AdminController.php on line 1330.
+ 1 APPPATH\Controllers\AdminController.php(1330): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "account_number"', 'D:\\xampp\\htdocs\\ci4\\app\\Controllers\\AdminController.php', 1330)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->markPaid()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-17 07:50:52 --> ErrorException: Undefined array key "account_number"
+[Method: POST, Route: admin/mark-paid]
+in APPPATH\Controllers\AdminController.php on line 1307.
+ 1 APPPATH\Controllers\AdminController.php(1307): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "account_number"', 'D:\\xampp\\htdocs\\ci4\\app\\Controllers\\AdminController.php', 1307)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->markPaid()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-17 08:13:08 --> ErrorException: Undefined array key "account_number"
+[Method: POST, Route: admin/mark-paid]
+in APPPATH\Controllers\AdminController.php on line 1308.
+ 1 APPPATH\Controllers\AdminController.php(1308): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "account_number"', 'D:\\xampp\\htdocs\\ci4\\app\\Controllers\\AdminController.php', 1308)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->markPaid()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-17 08:21:37 --> ErrorException: Array to string conversion
+[Method: POST, Route: admin/mark-paid]
+in APPPATH\Controllers\AdminController.php on line 1326.
+ 1 APPPATH\Controllers\AdminController.php(1326): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\xampp\\htdocs\\ci4\\app\\Controllers\\AdminController.php', 1326)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->markPaid()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-17 08:27:49 --> ErrorException: Undefined variable $accountNumber
+[Method: POST, Route: admin/mark-paid]
+in APPPATH\Controllers\AdminController.php on line 1307.
+ 1 APPPATH\Controllers\AdminController.php(1307): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $accountNumber', 'D:\\xampp\\htdocs\\ci4\\app\\Controllers\\AdminController.php', 1307)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->markPaid()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-17 08:28:46 --> ErrorException: Undefined array key "first_name"
+[Method: POST, Route: admin/mark-paid]
+in APPPATH\Controllers\AdminController.php on line 1326.
+ 1 APPPATH\Controllers\AdminController.php(1326): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "first_name"', 'D:\\xampp\\htdocs\\ci4\\app\\Controllers\\AdminController.php', 1326)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->markPaid()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')

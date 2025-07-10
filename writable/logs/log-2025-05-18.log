@@ -1,0 +1,264 @@
+CRITICAL - 2025-05-18 00:17:53 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/finance/revenue.php"
+[Method: GET, Route: admin/finance/revenue]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/finance/revenue.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/revenue', [], true)
+ 3 APPPATH\Controllers\AdminController.php(1675): view('admin/finance/revenue', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->revenue()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-18 00:17:58 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/finance/revenue.php"
+[Method: GET, Route: admin/finance/revenue]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/finance/revenue.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/revenue', [], true)
+ 3 APPPATH\Controllers\AdminController.php(1675): view('admin/finance/revenue', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->revenue()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-18 00:19:53 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/finance/revenue.php"
+[Method: GET, Route: admin/finance/revenue]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/finance/revenue.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/revenue', [], true)
+ 3 APPPATH\Controllers\AdminController.php(1676): view('admin/finance/revenue', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->revenue()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-18 00:19:55 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/finance/revenue.php"
+[Method: GET, Route: admin/finance/revenue]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/finance/revenue.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/revenue', [], true)
+ 3 APPPATH\Controllers\AdminController.php(1676): view('admin/finance/revenue', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->revenue()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-18 00:19:56 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/finance/revenue.php"
+[Method: GET, Route: admin/finance/revenue]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/finance/revenue.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/revenue', [], true)
+ 3 APPPATH\Controllers\AdminController.php(1676): view('admin/finance/revenue', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->revenue()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-18 00:19:56 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/finance/revenue.php"
+[Method: GET, Route: admin/finance/revenue]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/finance/revenue.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/revenue', [], true)
+ 3 APPPATH\Controllers\AdminController.php(1676): view('admin/finance/revenue', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->revenue()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-18 00:19:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/finance/revenue.php"
+[Method: GET, Route: admin/finance/revenue]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/finance/revenue.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/revenue', [], true)
+ 3 APPPATH\Controllers\AdminController.php(1676): view('admin/finance/revenue', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->revenue()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-18 00:19:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/finance/revenue.php"
+[Method: GET, Route: admin/finance/revenue]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/finance/revenue.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/revenue', [], true)
+ 3 APPPATH\Controllers\AdminController.php(1676): view('admin/finance/revenue', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->revenue()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-18 00:20:07 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/finance/revenue.php"
+[Method: GET, Route: admin/finance/revenue]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/finance/revenue.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/revenue', [], true)
+ 3 APPPATH\Controllers\AdminController.php(1676): view('admin/finance/revenue', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->revenue()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-18 00:55:14 --> Error: Class "App\Controllers\FinancialModel" not found
+[Method: GET, Route: admin/finance/monthly-report]
+in APPPATH\Controllers\AdminController.php on line 1675.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->monthlyReport()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-18 02:25:15 --> Error: Class "App\Controllers\FinancialModel" not found
+[Method: GET, Route: admin/finance/monthly-report]
+in APPPATH\Controllers\AdminController.php on line 1675.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->monthlyReport()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-18 02:26:03 --> Error: Class "App\Controllers\FinancialModel" not found
+[Method: GET, Route: admin/finance/monthly-report]
+in APPPATH\Controllers\AdminController.php on line 1675.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->monthlyReport()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-18 02:29:22 --> Error: Class "App\Controllers\FinancialModel" not found
+[Method: GET, Route: admin/finance/monthly-report]
+in APPPATH\Controllers\AdminController.php on line 1675.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->monthlyReport()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-18 02:37:19 --> Error: Call to undefined function formatDate()
+[Method: GET, Route: admin/finance/monthly-report]
+in APPPATH\Views\admin\finance\monthly_report.php on line 97.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/monthly_report', [], true)
+ 4 APPPATH\Controllers\AdminController.php(1682): view('admin/finance/monthly_report', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->monthlyReport()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-18 02:48:15 --> ErrorException: Undefined variable $totalRevenue
+[Method: GET, Route: admin/finance/monthly-report]
+in APPPATH\Views\admin\finance\monthly_report.php on line 91.
+ 1 APPPATH\Views\admin\finance\monthly_report.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalRevenue', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\finance\\monthly_report.php', 91)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\finance\\monthly_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/monthly_report', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1682): view('admin/finance/monthly_report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->monthlyReport()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-18 03:11:04 --> ParseError: syntax error, unexpected token "if"
+[Method: GET, Route: admin/finance/monthly-report]
+in APPPATH\Views\admin\finance\monthly_report.php on line 168.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/monthly_report', [], true)
+ 3 APPPATH\Controllers\AdminController.php(1682): view('admin/finance/monthly_report', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->monthlyReport()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-18 03:22:50 --> ErrorException: Undefined variable $totalRevenue
+[Method: GET, Route: admin/finance/monthly-report]
+in APPPATH\Views\admin\finance\monthly_report.php on line 124.
+ 1 APPPATH\Views\admin\finance\monthly_report.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalRevenue', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\finance\\monthly_report.php', 124)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\admin\\finance\\monthly_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/monthly_report', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1682): view('admin/finance/monthly_report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->monthlyReport()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-18 03:58:20 --> Error: Class "App\Controllers\Fill" not found
+[Method: GET, Route: admin/finance/export-report/2025-05]
+in APPPATH\Controllers\AdminController.php on line 1760.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->exportReport('2025-05')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-18 03:59:09 --> Error: Class "App\Controllers\Fill" not found
+[Method: GET, Route: admin/finance/export-report/2025-05]
+in APPPATH\Controllers\AdminController.php on line 1760.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->exportReport('2025-05')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-18 04:01:03 --> Error: Class "App\Controllers\Fill" not found
+[Method: GET, Route: admin/finance/export-report/2025-05]
+in APPPATH\Controllers\AdminController.php on line 1760.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->exportReport('2025-05')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-18 04:02:19 --> Error: Class "App\Controllers\Fill" not found
+[Method: GET, Route: admin/finance/export-report/2025-05]
+in APPPATH\Controllers\AdminController.php on line 1760.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->exportReport('2025-05')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-18 04:02:33 --> Error: Class "App\Controllers\Fill" not found
+[Method: GET, Route: admin/finance/export-report/2025-05]
+in APPPATH\Controllers\AdminController.php on line 1760.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->exportReport('2025-05')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')

@@ -1,0 +1,33 @@
+CRITICAL - 2025-04-19 00:10:13 --> ErrorException: Undefined array key "application_id"
+[Method: POST, Route: technician/updateStatus]
+in APPPATH\Controllers\TechnicianController.php on line 154.
+ 1 APPPATH\Controllers\TechnicianController.php(154): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "application_id"', 'D:\\xampp\\htdocs\\ci4\\app\\Controllers\\TechnicianController.php', 154)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->updateStatus()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-04-19 00:10:16 --> ErrorException: Undefined array key "application_id"
+[Method: POST, Route: technician/updateStatus]
+in APPPATH\Controllers\TechnicianController.php on line 154.
+ 1 APPPATH\Controllers\TechnicianController.php(154): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "application_id"', 'D:\\xampp\\htdocs\\ci4\\app\\Controllers\\TechnicianController.php', 154)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->updateStatus()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-04-19 00:24:20 --> ErrorException: Undefined variable $application
+[Method: POST, Route: technician/updateStatus]
+in APPPATH\Controllers\TechnicianController.php on line 150.
+ 1 APPPATH\Controllers\TechnicianController.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $application', 'D:\\xampp\\htdocs\\ci4\\app\\Controllers\\TechnicianController.php', 150)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->updateStatus()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')

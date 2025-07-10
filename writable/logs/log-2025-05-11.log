@@ -1,0 +1,60 @@
+CRITICAL - 2025-05-11 06:27:35 --> ErrorException: Undefined array key "install_request_id"
+[Method: GET, Route: technician/installRequests]
+in APPPATH\Views\technician\install_requests.php on line 44.
+ 1 APPPATH\Views\technician\install_requests.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "install_request_id"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\technician\\install_requests.php', 44)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\technician\\install_requests.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/install_requests', [], true)
+ 5 APPPATH\Controllers\TechnicianController.php(112): view('technician/install_requests', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->installRequests()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-11 06:27:38 --> ErrorException: Undefined array key "install_request_id"
+[Method: GET, Route: technician/installRequests]
+in APPPATH\Views\technician\install_requests.php on line 44.
+ 1 APPPATH\Views\technician\install_requests.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "install_request_id"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\technician\\install_requests.php', 44)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\technician\\install_requests.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/install_requests', [], true)
+ 5 APPPATH\Controllers\TechnicianController.php(112): view('technician/install_requests', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->installRequests()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-11 06:28:09 --> ErrorException: Undefined array key "install_request_id"
+[Method: GET, Route: technician/installRequests]
+in APPPATH\Views\technician\install_requests.php on line 44.
+ 1 APPPATH\Views\technician\install_requests.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "install_request_id"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\technician\\install_requests.php', 44)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\technician\\install_requests.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/install_requests', [], true)
+ 5 APPPATH\Controllers\TechnicianController.php(112): view('technician/install_requests', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->installRequests()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-11 06:28:13 --> ErrorException: Undefined array key "install_request_id"
+[Method: GET, Route: technician/installRequests]
+in APPPATH\Views\technician\install_requests.php on line 44.
+ 1 APPPATH\Views\technician\install_requests.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "install_request_id"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\technician\\install_requests.php', 44)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\technician\\install_requests.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/install_requests', [], true)
+ 5 APPPATH\Controllers\TechnicianController.php(112): view('technician/install_requests', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->installRequests()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')

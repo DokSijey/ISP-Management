@@ -1,0 +1,176 @@
+CRITICAL - 2025-05-25 02:52:28 --> ArgumentCountError: Too few arguments to function App\Controllers\TechnicianController::updateApplicationStatus(), 0 passed in D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: POST, Route: technician/updateStatus]
+in APPPATH\Controllers\TechnicianController.php on line 213.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->updateApplicationStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-25 11:22:38 --> ParseError: syntax error, unexpected token "return", expecting "function" or "const"
+[Method: GET, Route: technician/dashboard]
+in APPPATH\Controllers\TechnicianController.php on line 153.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Controllers\\TechnicianController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\TechnicianController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\TechnicianController')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\TechnicianController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-25 11:50:09 --> Error: Class "App\Controllers\InstallRequestsModel" not found
+[Method: POST, Route: technician/updateStatus]
+in APPPATH\Controllers\TechnicianController.php on line 138.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->updateStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-25 11:50:45 --> Error: Class "App\Controllers\InstallRequestModel" not found
+[Method: POST, Route: technician/updateStatus]
+in APPPATH\Controllers\TechnicianController.php on line 138.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->updateStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-25 12:48:24 --> Error: Class "App\Controllers\SubscriberModel" not found
+[Method: POST, Route: technician/submitInstallMaterials]
+in APPPATH\Controllers\TechnicianController.php on line 271.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->submitInstallMaterials()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-25 12:54:26 --> ErrorException: Undefined variable $application_id
+[Method: POST, Route: technician/submitInstallMaterials]
+in APPPATH\Controllers\TechnicianController.php on line 272.
+ 1 APPPATH\Controllers\TechnicianController.php(272): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $application_id', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Controllers\\TechnicianController.php', 272)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->submitInstallMaterials()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-25 14:07:10 --> ErrorException: Undefined array key "account_number"
+[Method: POST, Route: technician/submitInstallMaterials]
+in APPPATH\Controllers\TechnicianController.php on line 267.
+ 1 APPPATH\Controllers\TechnicianController.php(267): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "account_number"', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Controllers\\TechnicianController.php', 267)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->submitInstallMaterials()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+ERROR - 2025-05-25 16:06:10 --> mysqli_sql_exception: Table 'allstartechdb.invoice_history' doesn't exist in D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `in...', 0)
+#1 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `in...')
+#2 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `in...')
+#3 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `in...', Array, false)
+#4 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\app\Controllers\AdminController.php(1452): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(933): App\Controllers\AdminController->markPaid()
+#9 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#10 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-05-25 16:06:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'allstartechdb.invoice_history' doesn't exist
+[Method: POST, Route: admin/mark-paid]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `invoice_history` (`invoice_number`, `subscriber_id`, `billing_day`, `price_to_pay`, `status`, `paid_date`, `created_at`) VALUES (:invoice_number:, :subscriber_id:, :billing_day:, :price_to_pay:, :status:, :paid_date:, :created_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\AdminController.php(1452): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->markPaid()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-25 16:06:10 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'allstartechdb.invoice_history' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `invoice_history` (`invoice_number`, `subscriber_id`, `billing_day`, `price_to_pay`, `status`, `paid_date`, `created_at`) VALUES (\'INV-20250525-2989\', \'9\', \'4\', \'1499\', \'paid\', \'2025-05-26T00:06\', \'2025-05-25 16:06:10\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `invoice_history` (`invoice_number`, `subscriber_id`, `billing_day`, `price_to_pay`, `status`, `paid_date`, `created_at`) VALUES (\'INV-20250525-2989\', \'9\', \'4\', \'1499\', \'paid\', \'2025-05-26T00:06\', \'2025-05-25 16:06:10\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `invoice_history` (`invoice_number`, `subscriber_id`, `billing_day`, `price_to_pay`, `status`, `paid_date`, `created_at`) VALUES (:invoice_number:, :subscriber_id:, :billing_day:, :price_to_pay:, :status:, :paid_date:, :created_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\AdminController.php(1452): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->markPaid()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-25 16:06:10 --> [Caused by] mysqli_sql_exception: Table 'allstartechdb.invoice_history' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `invoice_history` (`invoice_number`, `subscriber_id`, `billing_day`, `price_to_pay`, `status`, `paid_date`, `created_at`) VALUES (\'INV-20250525-2989\', \'9\', \'4\', \'1499\', \'paid\', \'2025-05-26T00:06\', \'2025-05-25 16:06:10\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `invoice_history` (`invoice_number`, `subscriber_id`, `billing_day`, `price_to_pay`, `status`, `paid_date`, `created_at`) VALUES (\'INV-20250525-2989\', \'9\', \'4\', \'1499\', \'paid\', \'2025-05-26T00:06\', \'2025-05-25 16:06:10\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `invoice_history` (`invoice_number`, `subscriber_id`, `billing_day`, `price_to_pay`, `status`, `paid_date`, `created_at`) VALUES (\'INV-20250525-2989\', \'9\', \'4\', \'1499\', \'paid\', \'2025-05-26T00:06\', \'2025-05-25 16:06:10\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `invoice_history` (`invoice_number`, `subscriber_id`, `billing_day`, `price_to_pay`, `status`, `paid_date`, `created_at`) VALUES (:invoice_number:, :subscriber_id:, :billing_day:, :price_to_pay:, :status:, :paid_date:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\AdminController.php(1452): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->markPaid()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-25 16:30:18 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "billing_statement.php"
+[Method: POST, Route: admin/mark-paid]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('billing_statement.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('billing_statement', [], true)
+ 3 APPPATH\Controllers\AdminController.php(1481): view('billing_statement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->markPaid()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+ERROR - 2025-05-25 16:31:48 --> PHPMailer error: Could not access file: 
+ERROR - 2025-05-25 16:40:33 --> PDF generation error: Invalid file: "billing_statement.php"
+ERROR - 2025-05-25 16:40:33 --> Invoice PDF generation failed for invoice #INV-20250525-8576
+ERROR - 2025-05-25 16:44:12 --> PDF generation error: Undefined array key "logo"
+ERROR - 2025-05-25 16:44:12 --> Invoice PDF generation failed for invoice #INV-20250525-5933
+ERROR - 2025-05-25 16:58:23 --> PDF generation error: Undefined array key "logo"
+ERROR - 2025-05-25 16:58:23 --> Invoice PDF generation failed for invoice #INV-20250525-5571
+CRITICAL - 2025-05-25 16:59:05 --> ParseError: syntax error, unexpected single-quoted string "" alt="Company Logo" />"
+[Method: POST, Route: admin/mark-paid]
+in APPPATH\Helpers\invoice_helper.php on line 41.
+ 1 APPPATH\Controllers\AdminController.php(1461): helper([...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->markPaid()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+ERROR - 2025-05-25 17:00:08 --> PDF generation error: Undefined array key "account_number"
+ERROR - 2025-05-25 17:00:08 --> Invoice PDF generation failed for invoice #INV-20250525-2457
+ERROR - 2025-05-25 17:04:00 --> PDF generation error: Undefined array key "logo"
+ERROR - 2025-05-25 17:04:00 --> Invoice PDF generation failed for invoice #INV-20250525-6493

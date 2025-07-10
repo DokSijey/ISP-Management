@@ -1,0 +1,1095 @@
+CRITICAL - 2025-05-29 01:39:41 --> ArgumentCountError: Too few arguments to function CodeIgniter\Database\BaseBuilder::join(), 1 passed in D:\xampp\htdocs\ISP Management - ALLSTAR TECH\app\Controllers\AdminController.php on line 110 and at least 2 expected
+[Method: GET, Route: admin/dashboard]
+in SYSTEMPATH\Database\BaseBuilder.php on line 633.
+ 1 APPPATH\Controllers\AdminController.php(110): CodeIgniter\Database\BaseBuilder->join('install_requests *')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 00:06:57 --> ErrorException: Undefined array key "address"
+[Method: GET, Route: admin/tickets/install]
+in APPPATH\Views\admin\tickets.php on line 287.
+ 1 APPPATH\Views\admin\tickets.php(287): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "address"', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php', 287)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1074): view('admin/tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->install()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 00:07:01 --> ErrorException: Undefined array key "address"
+[Method: GET, Route: admin/tickets/install]
+in APPPATH\Views\admin\tickets.php on line 287.
+ 1 APPPATH\Views\admin\tickets.php(287): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "address"', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php', 287)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1074): view('admin/tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->install()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 00:12:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/tickets_install.php"
+[Method: GET, Route: admin/tickets/install]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/tickets_install.php')
+ 2 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('admin/tickets_install', null, true)
+ 3 APPPATH\Views\admin\tickets.php(8): CodeIgniter\View\View->include('admin/tickets_install')
+ 4 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/tickets', [], true)
+ 7 APPPATH\Controllers\AdminController.php(1074): view('admin/tickets', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->install()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 00:12:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/tickets_install.php"
+[Method: GET, Route: admin/tickets/install]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/tickets_install.php')
+ 2 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('admin/tickets_install', null, true)
+ 3 APPPATH\Views\admin\tickets.php(8): CodeIgniter\View\View->include('admin/tickets_install')
+ 4 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/tickets', [], true)
+ 7 APPPATH\Controllers\AdminController.php(1074): view('admin/tickets', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->install()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 00:18:59 --> ErrorException: Undefined variable $installRequests
+[Method: GET, Route: admin/tickets/install]
+in APPPATH\Controllers\AdminController.php on line 1059.
+ 1 APPPATH\Controllers\AdminController.php(1059): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $installRequests', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Controllers\\AdminController.php', 1059)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->install()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+ERROR - 2025-05-29 00:21:42 --> mysqli_sql_exception: Unknown column 'install_requests.subscriber_id' in 'on clause' in D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `install...', 0)
+#1 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `install...')
+#2 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `install...')
+#3 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `install...', Array, false)
+#4 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\app\Controllers\AdminController.php(1015): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+#6 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#7 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-05-29 00:21:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'install_requests.subscriber_id' in 'on clause'
+[Method: GET, Route: admin/tickets]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `install_requests`.*, `subscribers`.`first_name`, `subscribers`.`last_name`, `subscribers`.`plan`, `subscribers`.`address`
+FROM `install_requests`
+INNER JOIN `subscribers` ON `subscribers`.`id` = `install_requests`.`subscriber_id`
+WHERE `subscribers`.`city` = :subscribers.city:', [...], false)
+ 2 APPPATH\Controllers\AdminController.php(1015): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 00:21:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'install_requests.subscriber_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `install_requests`.*, `subscribers`.`first_name`, `subscribers`.`last_name`, `subscribers`.`plan`, `subscribers`.`address`
+FROM `install_requests`
+INNER JOIN `subscribers` ON `subscribers`.`id` = `install_requests`.`subscriber_id`
+WHERE `subscribers`.`city` = \'City of Malolos\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `install_requests`.*, `subscribers`.`first_name`, `subscribers`.`last_name`, `subscribers`.`plan`, `subscribers`.`address`
+FROM `install_requests`
+INNER JOIN `subscribers` ON `subscribers`.`id` = `install_requests`.`subscriber_id`
+WHERE `subscribers`.`city` = \'City of Malolos\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `install_requests`.*, `subscribers`.`first_name`, `subscribers`.`last_name`, `subscribers`.`plan`, `subscribers`.`address`
+FROM `install_requests`
+INNER JOIN `subscribers` ON `subscribers`.`id` = `install_requests`.`subscriber_id`
+WHERE `subscribers`.`city` = :subscribers.city:', [...], false)
+ 4 APPPATH\Controllers\AdminController.php(1015): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 00:21:42 --> [Caused by] mysqli_sql_exception: Unknown column 'install_requests.subscriber_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `install_requests`.*, `subscribers`.`first_name`, `subscribers`.`last_name`, `subscribers`.`plan`, `subscribers`.`address`
+FROM `install_requests`
+INNER JOIN `subscribers` ON `subscribers`.`id` = `install_requests`.`subscriber_id`
+WHERE `subscribers`.`city` = \'City of Malolos\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `install_requests`.*, `subscribers`.`first_name`, `subscribers`.`last_name`, `subscribers`.`plan`, `subscribers`.`address`
+FROM `install_requests`
+INNER JOIN `subscribers` ON `subscribers`.`id` = `install_requests`.`subscriber_id`
+WHERE `subscribers`.`city` = \'City of Malolos\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `install_requests`.*, `subscribers`.`first_name`, `subscribers`.`last_name`, `subscribers`.`plan`, `subscribers`.`address`
+FROM `install_requests`
+INNER JOIN `subscribers` ON `subscribers`.`id` = `install_requests`.`subscriber_id`
+WHERE `subscribers`.`city` = \'City of Malolos\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `install_requests`.*, `subscribers`.`first_name`, `subscribers`.`last_name`, `subscribers`.`plan`, `subscribers`.`address`
+FROM `install_requests`
+INNER JOIN `subscribers` ON `subscribers`.`id` = `install_requests`.`subscriber_id`
+WHERE `subscribers`.`city` = :subscribers.city:', [...], false)
+ 5 APPPATH\Controllers\AdminController.php(1015): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 00:24:40 --> ParseError: syntax error, unexpected token "{", expecting "function" or "const"
+[Method: GET, Route: admin/tickets]
+in APPPATH\Controllers\AdminController.php on line 1001.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+ERROR - 2025-05-29 00:24:58 --> mysqli_sql_exception: Unknown column 'applications.address' in 'field list' in D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `install...', 0)
+#1 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `install...')
+#2 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `install...')
+#3 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `install...', Array, false)
+#4 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\app\Controllers\AdminController.php(1015): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+#6 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#7 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-05-29 00:24:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'applications.address' in 'field list'
+[Method: GET, Route: admin/tickets]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `install_requests`.*, `applications`.`first_name`, `applications`.`last_name`, `applications`.`plan`, `applications`.`address`
+FROM `install_requests`
+INNER JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `applications`.`city` = :applications.city:', [...], false)
+ 2 APPPATH\Controllers\AdminController.php(1015): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 00:24:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'applications.address' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `install_requests`.*, `applications`.`first_name`, `applications`.`last_name`, `applications`.`plan`, `applications`.`address`
+FROM `install_requests`
+INNER JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `applications`.`city` = \'City of Malolos\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `install_requests`.*, `applications`.`first_name`, `applications`.`last_name`, `applications`.`plan`, `applications`.`address`
+FROM `install_requests`
+INNER JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `applications`.`city` = \'City of Malolos\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `install_requests`.*, `applications`.`first_name`, `applications`.`last_name`, `applications`.`plan`, `applications`.`address`
+FROM `install_requests`
+INNER JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `applications`.`city` = :applications.city:', [...], false)
+ 4 APPPATH\Controllers\AdminController.php(1015): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 00:24:58 --> [Caused by] mysqli_sql_exception: Unknown column 'applications.address' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `install_requests`.*, `applications`.`first_name`, `applications`.`last_name`, `applications`.`plan`, `applications`.`address`
+FROM `install_requests`
+INNER JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `applications`.`city` = \'City of Malolos\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `install_requests`.*, `applications`.`first_name`, `applications`.`last_name`, `applications`.`plan`, `applications`.`address`
+FROM `install_requests`
+INNER JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `applications`.`city` = \'City of Malolos\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `install_requests`.*, `applications`.`first_name`, `applications`.`last_name`, `applications`.`plan`, `applications`.`address`
+FROM `install_requests`
+INNER JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `applications`.`city` = \'City of Malolos\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `install_requests`.*, `applications`.`first_name`, `applications`.`last_name`, `applications`.`plan`, `applications`.`address`
+FROM `install_requests`
+INNER JOIN `applications` ON `applications`.`id` = `install_requests`.`application_id`
+WHERE `applications`.`city` = :applications.city:', [...], false)
+ 5 APPPATH\Controllers\AdminController.php(1015): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 00:25:37 --> ErrorException: Undefined array key "address"
+[Method: GET, Route: admin/tickets]
+in APPPATH\Views\admin\tickets.php on line 288.
+ 1 APPPATH\Views\admin\tickets.php(288): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "address"', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php', 288)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1029): view('admin/tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 00:29:21 --> ErrorException: Undefined array key "plan"
+[Method: GET, Route: admin/tickets]
+in APPPATH\Views\admin\tickets.php on line 330.
+ 1 APPPATH\Views\admin\tickets.php(330): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "plan"', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php', 330)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1029): view('admin/tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 00:35:26 --> ErrorException: Undefined array key "city"
+[Method: GET, Route: admin/tickets]
+in APPPATH\Views\admin\tickets.php on line 333.
+ 1 APPPATH\Views\admin\tickets.php(333): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "city"', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php', 333)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1029): view('admin/tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 00:35:54 --> ErrorException: Undefined array key "city"
+[Method: GET, Route: admin/tickets]
+in APPPATH\Views\admin\tickets.php on line 333.
+ 1 APPPATH\Views\admin\tickets.php(333): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "city"', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php', 333)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1029): view('admin/tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 00:36:30 --> ErrorException: Undefined array key "city"
+[Method: GET, Route: admin/tickets]
+in APPPATH\Views\admin\tickets.php on line 333.
+ 1 APPPATH\Views\admin\tickets.php(333): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "city"', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php', 333)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1029): view('admin/tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 00:36:34 --> ErrorException: Undefined array key "city"
+[Method: GET, Route: admin/tickets]
+in APPPATH\Views\admin\tickets.php on line 333.
+ 1 APPPATH\Views\admin\tickets.php(333): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "city"', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php', 333)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1029): view('admin/tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 00:40:41 --> ErrorException: Undefined array key "app_status"
+[Method: GET, Route: admin/tickets]
+in APPPATH\Views\admin\tickets.php on line 293.
+ 1 APPPATH\Views\admin\tickets.php(293): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "app_status"', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php', 293)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1030): view('admin/tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->repairTickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 01:03:33 --> ParseError: syntax error, unexpected double-quoted string ">
+", expecting "," or ";"
+[Method: GET, Route: admin/tickets]
+in APPPATH\Views\admin\tickets.php on line 311.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/tickets', [], true)
+ 3 APPPATH\Controllers\AdminController.php(1031): view('admin/tickets', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->Tickets()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 02:27:25 --> ErrorException: Undefined array key "application_id"
+[Method: GET, Route: admin/tickets]
+in APPPATH\Views\admin\tickets.php on line 299.
+ 1 APPPATH\Views\admin\tickets.php(299): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "application_id"', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php', 299)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1031): view('admin/tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->Tickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 03:14:30 --> ErrorException: Undefined variable $subscribers
+[Method: GET, Route: admin/tickets]
+in APPPATH\Views\admin\tickets.php on line 390.
+ 1 APPPATH\Views\admin\tickets.php(390): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $subscribers', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php', 390)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1031): view('admin/tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->Tickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 03:14:44 --> ErrorException: Undefined variable $subscribers
+[Method: GET, Route: admin/tickets]
+in APPPATH\Views\admin\tickets.php on line 390.
+ 1 APPPATH\Views\admin\tickets.php(390): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $subscribers', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php', 390)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1031): view('admin/tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->Tickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+ERROR - 2025-05-29 03:16:20 --> mysqli_sql_exception: Unknown column 'install_requests.reason' in 'field list' in D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `applica...', 0)
+#1 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `applica...')
+#2 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `applica...')
+#3 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `applica...', Array, false)
+#4 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\app\Controllers\AdminController.php(1016): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(933): App\Controllers\AdminController->Tickets()
+#6 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#7 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-05-29 03:16:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'install_requests.reason' in 'field list'
+[Method: GET, Route: admin/tickets]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `applications`.*, `install_requests`.`schedule_date`, `install_requests`.`reason` AS `app_reason`
+FROM `applications`
+INNER JOIN `install_requests` ON `install_requests`.`application_id` = `applications`.`id`
+WHERE `applications`.`city` = :applications.city:
+ORDER BY `install_requests`.`schedule_date` DESC', [...], false)
+ 2 APPPATH\Controllers\AdminController.php(1016): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->Tickets()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 03:16:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'install_requests.reason' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `applications`.*, `install_requests`.`schedule_date`, `install_requests`.`reason` AS `app_reason`
+FROM `applications`
+INNER JOIN `install_requests` ON `install_requests`.`application_id` = `applications`.`id`
+WHERE `applications`.`city` = \'City of Malolos\'
+ORDER BY `install_requests`.`schedule_date` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `applications`.*, `install_requests`.`schedule_date`, `install_requests`.`reason` AS `app_reason`
+FROM `applications`
+INNER JOIN `install_requests` ON `install_requests`.`application_id` = `applications`.`id`
+WHERE `applications`.`city` = \'City of Malolos\'
+ORDER BY `install_requests`.`schedule_date` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `applications`.*, `install_requests`.`schedule_date`, `install_requests`.`reason` AS `app_reason`
+FROM `applications`
+INNER JOIN `install_requests` ON `install_requests`.`application_id` = `applications`.`id`
+WHERE `applications`.`city` = :applications.city:
+ORDER BY `install_requests`.`schedule_date` DESC', [...], false)
+ 4 APPPATH\Controllers\AdminController.php(1016): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->Tickets()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 03:16:20 --> [Caused by] mysqli_sql_exception: Unknown column 'install_requests.reason' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `applications`.*, `install_requests`.`schedule_date`, `install_requests`.`reason` AS `app_reason`
+FROM `applications`
+INNER JOIN `install_requests` ON `install_requests`.`application_id` = `applications`.`id`
+WHERE `applications`.`city` = \'City of Malolos\'
+ORDER BY `install_requests`.`schedule_date` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `applications`.*, `install_requests`.`schedule_date`, `install_requests`.`reason` AS `app_reason`
+FROM `applications`
+INNER JOIN `install_requests` ON `install_requests`.`application_id` = `applications`.`id`
+WHERE `applications`.`city` = \'City of Malolos\'
+ORDER BY `install_requests`.`schedule_date` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `applications`.*, `install_requests`.`schedule_date`, `install_requests`.`reason` AS `app_reason`
+FROM `applications`
+INNER JOIN `install_requests` ON `install_requests`.`application_id` = `applications`.`id`
+WHERE `applications`.`city` = \'City of Malolos\'
+ORDER BY `install_requests`.`schedule_date` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `applications`.*, `install_requests`.`schedule_date`, `install_requests`.`reason` AS `app_reason`
+FROM `applications`
+INNER JOIN `install_requests` ON `install_requests`.`application_id` = `applications`.`id`
+WHERE `applications`.`city` = :applications.city:
+ORDER BY `install_requests`.`schedule_date` DESC', [...], false)
+ 5 APPPATH\Controllers\AdminController.php(1016): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->Tickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+ERROR - 2025-05-29 12:12:20 --> mysqli_sql_exception: Unknown column 'install.requests_status' in 'where clause' in D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\app\Controllers\AdminController.php(115): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(933): App\Controllers\AdminController->dashboard()
+#6 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#7 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2025-05-29 12:25:13 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, 'Open' ASC, 'On-going' ASC, 'Re-schedule' ASC, 'Cancelled' ASC, 'Resolve...' at line 7 in D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `repair_...', 0)
+#1 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `repair_...')
+#2 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `repair_...')
+#3 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `repair_...', Array, false)
+#4 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\app\Models\RepairTicketModel.php(42): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\app\Controllers\AdminController.php(267): App\Models\RepairTicketModel->getRepairRequestsWithDetails('City of Malolos', '2025-05-29')
+#8 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(933): App\Controllers\AdminController->dashboard()
+#9 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#10 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-05-29 06:29:00 --> ErrorException: Undefined variable $billing_records
+[Method: GET, Route: admin/billings]
+in APPPATH\Views\admin\billings.php on line 116.
+ 1 APPPATH\Views\admin\billings.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $billing_records', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\billings.php', 116)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\billings.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/billings', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1179): view('admin/billings', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->billings()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 06:29:04 --> ErrorException: Undefined variable $billing_records
+[Method: GET, Route: admin/billings]
+in APPPATH\Views\admin\billings.php on line 116.
+ 1 APPPATH\Views\admin\billings.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $billing_records', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\billings.php', 116)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\billings.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/billings', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1179): view('admin/billings', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->billings()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 06:33:04 --> ErrorException: Undefined variable $billing_records
+[Method: GET, Route: admin/billings]
+in APPPATH\Views\admin\billings.php on line 116.
+ 1 APPPATH\Views\admin\billings.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $billing_records', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\billings.php', 116)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\billings.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/billings', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1179): view('admin/billings', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->billings()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 06:33:16 --> ErrorException: Undefined variable $billing_records
+[Method: GET, Route: admin/billings]
+in APPPATH\Views\admin\billings.php on line 116.
+ 1 APPPATH\Views\admin\billings.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $billing_records', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\billings.php', 116)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\billings.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/billings', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1179): view('admin/billings', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->billings()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 06:35:04 --> ErrorException: Undefined variable $billing_records
+[Method: GET, Route: admin/billings]
+in APPPATH\Views\admin\billings.php on line 111.
+ 1 APPPATH\Views\admin\billings.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $billing_records', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\billings.php', 111)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\billings.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/billings', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1179): view('admin/billings', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->billings()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 06:35:39 --> ErrorException: Undefined variable $billing_records
+[Method: GET, Route: admin/billings]
+in APPPATH\Views\admin\billings.php on line 115.
+ 1 APPPATH\Views\admin\billings.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $billing_records', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\billings.php', 115)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\billings.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/billings', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1179): view('admin/billings', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->billings()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 06:36:46 --> ErrorException: Undefined variable $billing_records
+[Method: GET, Route: admin/billings]
+in APPPATH\Views\admin\billings.php on line 114.
+ 1 APPPATH\Views\admin\billings.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $billing_records', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\billings.php', 114)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\billings.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/billings', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1179): view('admin/billings', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->billings()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 06:37:22 --> ErrorException: Undefined variable $billing_records
+[Method: GET, Route: admin/billings]
+in APPPATH\Views\admin\billings.php on line 114.
+ 1 APPPATH\Views\admin\billings.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $billing_records', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\billings.php', 114)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\billings.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/billings', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1179): view('admin/billings', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->billings()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 06:38:14 --> ErrorException: Undefined array key "account_number"
+[Method: GET, Route: admin/billings]
+in APPPATH\Views\admin\billings.php on line 116.
+ 1 APPPATH\Views\admin\billings.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "account_number"', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\billings.php', 116)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\billings.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/billings', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1840): view('admin/billings', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->billings()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 06:39:13 --> ErrorException: Undefined array key "account_number"
+[Method: GET, Route: admin/billings]
+in APPPATH\Views\admin\billings.php on line 116.
+ 1 APPPATH\Views\admin\billings.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "account_number"', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\billings.php', 116)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\billings.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/billings', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1840): view('admin/billings', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->billings()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 06:39:23 --> ErrorException: Undefined array key "account_number"
+[Method: GET, Route: admin/billings]
+in APPPATH\Views\admin\billings.php on line 116.
+ 1 APPPATH\Views\admin\billings.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "account_number"', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\billings.php', 116)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\billings.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/billings', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1840): view('admin/billings', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->billings()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 07:57:30 --> ErrorException: Undefined variable $biling_records
+[Method: GET, Route: admin/billings]
+in APPPATH\Views\admin\billings.php on line 403.
+ 1 APPPATH\Views\admin\billings.php(403): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $biling_records', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\billings.php', 403)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\billings.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/billings', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1850): view('admin/billings', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->billings()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 07:57:47 --> ErrorException: Undefined array key "plan"
+[Method: GET, Route: admin/billings]
+in APPPATH\Views\admin\billings.php on line 407.
+ 1 APPPATH\Views\admin\billings.php(407): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "plan"', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\billings.php', 407)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\billings.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/billings', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1850): view('admin/billings', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->billings()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 07:58:59 --> ErrorException: Undefined array key "first_name"
+[Method: GET, Route: admin/billings]
+in APPPATH\Views\admin\billings.php on line 410.
+ 1 APPPATH\Views\admin\billings.php(410): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "first_name"', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\billings.php', 410)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\billings.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/billings', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1850): view('admin/billings', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->billings()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 14:25:10 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\FinanceModel::getRevenueByMonth
+[Method: GET, Route: admin/finance/finance-records]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\AdminController.php(2424): CodeIgniter\Model->__call('getRevenueByMonth', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->financeRecords()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 14:26:20 --> ErrorException: Undefined variable $selectedMonth
+[Method: GET, Route: admin/finance/finance-records]
+in APPPATH\Views\admin\finance\revenue_and_expenses.php on line 35.
+ 1 APPPATH\Views\admin\finance\revenue_and_expenses.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedMonth', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\revenue_and_expenses.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\revenue_and_expenses.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/revenue_and_expenses', [], true)
+ 5 APPPATH\Views\admin\finance\finance_records.php(41): view('admin/finance/revenue_and_expenses')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\finance_records.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/finance_records', [], true)
+ 9 APPPATH\Controllers\AdminController.php(2418): view('admin/finance/finance_records')
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->financeRecords()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 14:26:26 --> ErrorException: Undefined variable $selectedMonth
+[Method: GET, Route: admin/finance/finance-records]
+in APPPATH\Views\admin\finance\revenue_and_expenses.php on line 35.
+ 1 APPPATH\Views\admin\finance\revenue_and_expenses.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedMonth', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\revenue_and_expenses.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\revenue_and_expenses.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/revenue_and_expenses', [], true)
+ 5 APPPATH\Views\admin\finance\finance_records.php(41): view('admin/finance/revenue_and_expenses')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\finance_records.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/finance_records', [], true)
+ 9 APPPATH\Controllers\AdminController.php(2418): view('admin/finance/finance_records')
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->financeRecords()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 14:26:36 --> ErrorException: Undefined variable $selectedMonth
+[Method: GET, Route: admin/finance/finance-records]
+in APPPATH\Views\admin\finance\revenue_and_expenses.php on line 35.
+ 1 APPPATH\Views\admin\finance\revenue_and_expenses.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedMonth', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\revenue_and_expenses.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\revenue_and_expenses.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/revenue_and_expenses', [], true)
+ 5 APPPATH\Views\admin\finance\finance_records.php(41): view('admin/finance/revenue_and_expenses')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\finance_records.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/finance_records', [], true)
+ 9 APPPATH\Controllers\AdminController.php(2418): view('admin/finance/finance_records')
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->financeRecords()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 14:27:42 --> ErrorException: Undefined variable $selectedMonth
+[Method: GET, Route: admin/finance/finance-records]
+in APPPATH\Views\admin\finance\revenue_and_expenses.php on line 35.
+ 1 APPPATH\Views\admin\finance\revenue_and_expenses.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedMonth', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\revenue_and_expenses.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\revenue_and_expenses.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/revenue_and_expenses', [], true)
+ 5 APPPATH\Views\admin\finance\finance_records.php(41): view('admin/finance/revenue_and_expenses')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\finance_records.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/finance_records', [], true)
+ 9 APPPATH\Controllers\AdminController.php(2418): view('admin/finance/finance_records')
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->financeRecords()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 14:29:27 --> ErrorException: Undefined variable $selectedMonth
+[Method: GET, Route: admin/finance/finance-records]
+in APPPATH\Views\admin\finance\revenue_and_expenses.php on line 35.
+ 1 APPPATH\Views\admin\finance\revenue_and_expenses.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedMonth', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\revenue_and_expenses.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\revenue_and_expenses.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/revenue_and_expenses', [], true)
+ 5 APPPATH\Views\admin\finance\finance_records.php(41): view('admin/finance/revenue_and_expenses')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\finance_records.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/finance_records', [], true)
+ 9 APPPATH\Controllers\AdminController.php(2418): view('admin/finance/finance_records')
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->financeRecords()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 14:29:34 --> ErrorException: Undefined variable $selectedMonth
+[Method: GET, Route: admin/finance/finance-records]
+in APPPATH\Views\admin\finance\revenue_and_expenses.php on line 35.
+ 1 APPPATH\Views\admin\finance\revenue_and_expenses.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedMonth', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\revenue_and_expenses.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\revenue_and_expenses.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/revenue_and_expenses', [], true)
+ 5 APPPATH\Views\admin\finance\finance_records.php(41): view('admin/finance/revenue_and_expenses')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\finance_records.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/finance_records', [], true)
+ 9 APPPATH\Controllers\AdminController.php(2418): view('admin/finance/finance_records')
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->financeRecords()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 14:48:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/finance_records.php"
+[Method: GET, Route: admin/finance/finance-records]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/finance_records.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance_records', [], true)
+ 3 APPPATH\Controllers\AdminController.php(2450): view('admin/finance_records', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->financeRecords()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 15:42:32 --> ErrorException: Undefined variable $months
+[Method: GET, Route: admin/finance/finance-records]
+in APPPATH\Views\admin\finance\finance_records.php on line 166.
+ 1 APPPATH\Views\admin\finance\finance_records.php(166): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $months', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\finance_records.php', 166)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\finance_records.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/finance_records', [], true)
+ 5 APPPATH\Controllers\AdminController.php(2450): view('admin/finance/finance_records', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->financeRecords()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 15:45:56 --> ErrorException: Undefined variable $selectedMonth
+[Method: GET, Route: admin/finance/finance-records]
+in APPPATH\Views\admin\finance\finance_records.php on line 167.
+ 1 APPPATH\Views\admin\finance\finance_records.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedMonth', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\finance_records.php', 167)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\finance_records.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/finance_records', [], true)
+ 5 APPPATH\Controllers\AdminController.php(2452): view('admin/finance/finance_records', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->financeRecords()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 15:46:57 --> ErrorException: Undefined variable $hasMonthly
+[Method: GET, Route: admin/finance/finance-records]
+in APPPATH\Views\admin\finance\finance_records.php on line 176.
+ 1 APPPATH\Views\admin\finance\finance_records.php(176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hasMonthly', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\finance_records.php', 176)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\finance_records.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/finance_records', [], true)
+ 5 APPPATH\Controllers\AdminController.php(2452): view('admin/finance/finance_records', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->financeRecords()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 15:53:00 --> ErrorException: Undefined variable $hasMonthly
+[Method: GET, Route: admin/finance/finance-records]
+in APPPATH\Views\admin\finance\finance_records.php on line 176.
+ 1 APPPATH\Views\admin\finance\finance_records.php(176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hasMonthly', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\finance_records.php', 176)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\finance_records.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/finance_records', [], true)
+ 5 APPPATH\Controllers\AdminController.php(2472): view('admin/finance/finance_records', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->financeRecords()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 15:55:07 --> ErrorException: Undefined variable $hasExpense
+[Method: GET, Route: admin/finance/finance-records]
+in APPPATH\Views\admin\finance\finance_records.php on line 251.
+ 1 APPPATH\Views\admin\finance\finance_records.php(251): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hasExpense', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\finance_records.php', 251)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\finance_records.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/finance_records', [], true)
+ 5 APPPATH\Controllers\AdminController.php(2472): view('admin/finance/finance_records', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->financeRecords()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 15:55:09 --> ErrorException: Undefined variable $hasExpense
+[Method: GET, Route: admin/finance/finance-records]
+in APPPATH\Views\admin\finance\finance_records.php on line 251.
+ 1 APPPATH\Views\admin\finance\finance_records.php(251): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hasExpense', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\finance_records.php', 251)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\finance_records.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/finance_records', [], true)
+ 5 APPPATH\Controllers\AdminController.php(2472): view('admin/finance/finance_records', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->financeRecords()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 16:04:58 --> ErrorException: Undefined variable $type
+[Method: GET, Route: admin/finance/finance-records]
+in APPPATH\Views\admin\finance\finance_records.php on line 121.
+ 1 APPPATH\Views\admin\finance\finance_records.php(121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $type', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\finance_records.php', 121)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\finance_records.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/finance_records', [], true)
+ 5 APPPATH\Controllers\AdminController.php(2449): view('admin/finance/finance_records', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->financeRecords()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 16:05:06 --> ErrorException: Undefined variable $type
+[Method: GET, Route: admin/finance/finance-records]
+in APPPATH\Views\admin\finance\finance_records.php on line 121.
+ 1 APPPATH\Views\admin\finance\finance_records.php(121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $type', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\finance_records.php', 121)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\finance_records.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/finance_records', [], true)
+ 5 APPPATH\Controllers\AdminController.php(2449): view('admin/finance/finance_records', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->financeRecords()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 16:15:11 --> ErrorException: Undefined variable $hasMonthly
+[Method: GET, Route: admin/finance/finance-records]
+in APPPATH\Views\admin\finance\finance_records.php on line 191.
+ 1 APPPATH\Views\admin\finance\finance_records.php(191): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hasMonthly', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\finance_records.php', 191)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\finance_records.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/finance_records', [], true)
+ 5 APPPATH\Controllers\AdminController.php(2485): view('admin/finance/finance_records', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->financeRecords()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 16:25:58 --> ErrorException: Undefined variable $hasExpense
+[Method: GET, Route: admin/finance/finance-records]
+in APPPATH\Views\admin\finance\finance_records.php on line 275.
+ 1 APPPATH\Views\admin\finance\finance_records.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hasExpense', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\finance_records.php', 275)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\finance_records.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/finance_records', [], true)
+ 5 APPPATH\Controllers\AdminController.php(2485): view('admin/finance/finance_records', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->financeRecords()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 16:41:21 --> ErrorException: Undefined variable $totalExpenses
+[Method: GET, Route: admin/finance/finance-records]
+in APPPATH\Views\admin\finance\finance_records.php on line 448.
+ 1 APPPATH\Views\admin\finance\finance_records.php(448): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalExpenses', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\finance_records.php', 448)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\finance\\finance_records.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/finance/finance_records', [], true)
+ 5 APPPATH\Controllers\AdminController.php(2485): view('admin/finance/finance_records', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->financeRecords()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 17:52:29 --> ErrorException: Undefined variable $esc
+[Method: GET, Route: technician/dashboard]
+in APPPATH\Views\technician\dashboard.php on line 42.
+ 1 APPPATH\Views\technician\dashboard.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $esc', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php', 42)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/dashboard', [], true)
+ 5 APPPATH\Controllers\TechnicianController.php(108): view('technician/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 17:52:46 --> Error: Array callback must have exactly two elements
+[Method: GET, Route: technician/dashboard]
+in APPPATH\Views\technician\dashboard.php on line 42.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/dashboard', [], true)
+ 4 APPPATH\Controllers\TechnicianController.php(108): view('technician/dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-29 17:53:18 --> ErrorException: Array to string conversion
+[Method: GET, Route: technician/dashboard]
+in APPPATH\Views\technician\dashboard.php on line 42.
+ 1 APPPATH\Views\technician\dashboard.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php', 42)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\technician\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/dashboard', [], true)
+ 5 APPPATH\Controllers\TechnicianController.php(108): view('technician/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')

@@ -1,0 +1,158 @@
+CRITICAL - 2025-05-09 01:28:23 --> ErrorException: Undefined variable $repair_tickets
+[Method: GET, Route: technician/repairRequests]
+in APPPATH\Views\technician\repair_requests.php on line 28.
+ 1 APPPATH\Views\technician\repair_requests.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $repair_tickets', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\technician\\repair_requests.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\technician\\repair_requests.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/repair_requests', [], true)
+ 5 APPPATH\Controllers\TechnicianController.php(314): view('technician/repair_requests', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->repairRequests()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-09 01:36:23 --> ErrorException: Undefined array key "account_name"
+[Method: GET, Route: technician/repairRequests]
+in APPPATH\Views\technician\repair_requests.php on line 30.
+ 1 APPPATH\Views\technician\repair_requests.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "account_name"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\technician\\repair_requests.php', 30)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\technician\\repair_requests.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/repair_requests', [], true)
+ 5 APPPATH\Controllers\TechnicianController.php(314): view('technician/repair_requests', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->repairRequests()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-09 01:36:27 --> ErrorException: Undefined array key "account_name"
+[Method: GET, Route: technician/repairRequests]
+in APPPATH\Views\technician\repair_requests.php on line 30.
+ 1 APPPATH\Views\technician\repair_requests.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "account_name"', 'D:\\xampp\\htdocs\\ci4\\app\\Views\\technician\\repair_requests.php', 30)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\ci4\\app\\Views\\technician\\repair_requests.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('technician/repair_requests', [], true)
+ 5 APPPATH\Controllers\TechnicianController.php(314): view('technician/repair_requests', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->repairRequests()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-09 01:40:54 --> ErrorException: Undefined property: App\Controllers\TechnicianController::$db
+[Method: POST, Route: technician/updateRepairStatus]
+in APPPATH\Controllers\TechnicianController.php on line 325.
+ 1 APPPATH\Controllers\TechnicianController.php(325): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\TechnicianController::$db', 'D:\\xampp\\htdocs\\ci4\\app\\Controllers\\TechnicianController.php', 325)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->updateRepairStatus()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-09 01:41:36 --> ErrorException: Undefined property: App\Controllers\TechnicianController::$db
+[Method: POST, Route: technician/updateRepairStatus]
+in APPPATH\Controllers\TechnicianController.php on line 325.
+ 1 APPPATH\Controllers\TechnicianController.php(325): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\TechnicianController::$db', 'D:\\xampp\\htdocs\\ci4\\app\\Controllers\\TechnicianController.php', 325)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->updateRepairStatus()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-09 01:47:03 --> ErrorException: Undefined property: App\Controllers\TechnicianController::$db
+[Method: POST, Route: technician/updateRepairStatus]
+in APPPATH\Controllers\TechnicianController.php on line 327.
+ 1 APPPATH\Controllers\TechnicianController.php(327): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\TechnicianController::$db', 'D:\\xampp\\htdocs\\ci4\\app\\Controllers\\TechnicianController.php', 327)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->updateRepairStatus()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-09 01:54:25 --> Error: Class "App\Controllers\RepairTicketModel" not found
+[Method: POST, Route: technician/updateRepairStatus]
+in APPPATH\Controllers\TechnicianController.php on line 330.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->updateRepairStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-09 01:55:42 --> Error: Class "App\Controllers\RepairTicketModel" not found
+[Method: POST, Route: technician/updateRepairStatus]
+in APPPATH\Controllers\TechnicianController.php on line 330.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->updateRepairStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-09 01:56:56 --> Error: Class "App\Controllers\RepairTicketModel" not found
+[Method: POST, Route: technician/updateRepairStatus]
+in APPPATH\Controllers\TechnicianController.php on line 331.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->updateRepairStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-09 02:16:41 --> Error: Class "App\Controllers\RepairTicketModel" not found
+[Method: POST, Route: technician/updateRepairStatus]
+in APPPATH\Controllers\TechnicianController.php on line 331.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->updateRepairStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-09 02:20:48 --> Error: Class "App\Controllers\RepairTicketModel" not found
+[Method: POST, Route: technician/updateRepairStatus]
+in APPPATH\Controllers\TechnicianController.php on line 331.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->updateRepairStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-09 02:21:34 --> Error: Class "App\Controllers\RepairTicketModel" not found
+[Method: POST, Route: technician/updateRepairStatus]
+in APPPATH\Controllers\TechnicianController.php on line 331.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->updateRepairStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-09 02:40:26 --> Error: Class "App\Models\RepairModel" not found
+[Method: POST, Route: technician/updateRepairStatus]
+in APPPATH\Controllers\TechnicianController.php on line 330.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->updateRepairStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')
+CRITICAL - 2025-05-09 02:40:39 --> Error: Class "App\Controllers\RepairTicketModel" not found
+[Method: POST, Route: technician/updateRepairStatus]
+in APPPATH\Controllers\TechnicianController.php on line 331.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TechnicianController->updateRepairStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TechnicianController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\ci4\\public\\index.php')

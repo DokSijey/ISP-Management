@@ -1,0 +1,320 @@
+ERROR - 2025-05-31 09:30:20 --> Billing Error: Undefined variable $to_be_payed
+CRITICAL - 2025-05-31 12:22:36 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: technician/updateStatus]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('technician/updateStatus', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-31 12:22:52 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: technician/updateStatus]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('technician/updateStatus', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-31 12:24:53 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: technician/updateStatus]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('technician/updateStatus', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-31 13:01:51 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\BillsModel::markOverdueUnpaid
+[Method: CLI, Route: billing:markunpaid]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Commands\BillingMarkUnpaid.php(19): CodeIgniter\Model->__call('markOverdueUnpaid', [])
+ 2 SYSTEMPATH\CLI\Commands.php(70): App\Commands\BillingMarkUnpaid->run([])
+ 3 SYSTEMPATH\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('billing:markunpaid', [])
+ 4 SYSTEMPATH\Boot.php(360): CodeIgniter\CLI\Console->run()
+ 5 SYSTEMPATH\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 6 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2025-05-31 14:18:06 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: technician/updateRepairStatus]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('technician/updateRepairStatus', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-31 14:18:06 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: technician/updateRepairStatus]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('technician/updateRepairStatus', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-31 14:18:06 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: technician/updateRepairStatus]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('technician/updateRepairStatus', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-31 14:18:17 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: technician/updateRepairStatus]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('technician/updateRepairStatus', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-31 14:37:59 --> ErrorException: Undefined array key "is_overdue"
+[Method: GET, Route: admin/billings]
+in APPPATH\Views\admin\billings.php on line 475.
+ 1 APPPATH\Views\admin\billings.php(475): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "is_overdue"', 'C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\billings.php', 475)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\billings.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/billings', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1891): view('admin/billings', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->billings()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-31 14:39:07 --> ErrorException: Undefined array key "is_overdue"
+[Method: GET, Route: admin/billings]
+in APPPATH\Views\admin\billings.php on line 475.
+ 1 APPPATH\Views\admin\billings.php(475): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "is_overdue"', 'C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\billings.php', 475)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\billings.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/billings', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1891): view('admin/billings', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->billings()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-31 14:39:14 --> ErrorException: Undefined array key "is_overdue"
+[Method: GET, Route: admin/billings]
+in APPPATH\Views\admin\billings.php on line 475.
+ 1 APPPATH\Views\admin\billings.php(475): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "is_overdue"', 'C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\billings.php', 475)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\billings.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/billings', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1891): view('admin/billings', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->billings()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+ERROR - 2025-05-31 14:44:09 --> PHPMailer error: SMTP Error: data not accepted. SMTP server error: DATA END command failed
+CRITICAL - 2025-05-31 15:45:39 --> ErrorException: Undefined variable $currentDueDate
+[Method: POST, Route: admin/mark-paid]
+in APPPATH\Controllers\AdminController.php on line 1738.
+ 1 APPPATH\Controllers\AdminController.php(1738): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $currentDueDate', 'C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Controllers\\AdminController.php', 1738)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->markPaid()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-31 15:51:14 --> Error: Object of class DateTime could not be converted to string
+[Method: POST, Route: admin/mark-paid]
+in APPPATH\Views\admin\billing_statement.php on line 154.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/billing_statement', [], true)
+ 4 APPPATH\Helpers\invoice_helper.php(8): view('admin/billing_statement', [...])
+ 5 APPPATH\Controllers\AdminController.php(1824): createInvoicePDF([...], 'INV-20250531-8568', 'C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\writable\\invoices/INV-20250531-8568.pdf')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->markPaid()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-31 15:54:15 --> Error: Call to a member function format() on string
+[Method: POST, Route: admin/mark-paid]
+in APPPATH\Controllers\AdminController.php on line 1741.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->markPaid()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-31 16:42:16 --> ErrorException: Undefined variable $plans
+[Method: GET, Route: /]
+in APPPATH\Views\landing_page.php on line 82.
+ 1 APPPATH\Views\landing_page.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $plans', 'C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\landing_page.php', 82)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\landing_page.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('landing_page', [], true)
+ 5 APPPATH\Controllers\Landing.php(10): view('landing_page')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Landing->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Landing))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-31 16:45:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "landing.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('landing.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('landing', [], true)
+ 3 APPPATH\Controllers\Landing.php(18): view('landing', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Landing->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Landing))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+ERROR - 2025-05-31 18:08:49 --> Billing Error: Cannot use object of type App\Models\BillsModel as array
+ERROR - 2025-05-31 18:10:17 --> Billing Error: Cannot use object of type App\Models\BillsModel as array
+ERROR - 2025-05-31 18:12:16 --> Billing Error: Cannot use object of type App\Models\BillsModel as array
+ERROR - 2025-05-31 18:19:53 --> Billing Error: Undefined variable $bill
+ERROR - 2025-05-31 18:30:49 --> Billing Error: App\Models\BillsModel::calculateDueDate(): Argument #1 ($createdAt) must be of type string, DateTime given, called in C:\xampp\htdocs\ISP Management - ALLSTAR TECH\app\Controllers\AdminController.php on line 1286
+ERROR - 2025-05-31 18:32:34 --> Billing Error: Undefined variable $nowFormatted
+ERROR - 2025-05-31 18:33:13 --> Billing Error: Object of class DateTime could not be converted to string
+ERROR - 2025-05-31 18:36:10 --> Billing Error: DateTime::__construct(): Argument #1 ($datetime) must be of type string, DateTime given
+ERROR - 2025-05-31 18:39:26 --> Billing Error: Object of class DateTime could not be converted to string
+ERROR - 2025-05-31 18:42:01 --> Billing Error: Object of class DateTime could not be converted to string
+ERROR - 2025-05-31 18:45:04 --> Billing Error: Object of class DateTime could not be converted to string
+ERROR - 2025-05-31 18:46:57 --> Billing Error: Object of class DateTime could not be converted to string
+ERROR - 2025-05-31 18:48:18 --> Billing Error: Object of class DateTime could not be converted to string
+ERROR - 2025-05-31 18:50:07 --> Billing Error: App\Models\BillsModel::calculateDueDate(): Argument #1 ($createdAt) must be of type DateTime, string given, called in C:\xampp\htdocs\ISP Management - ALLSTAR TECH\app\Controllers\AdminController.php on line 1283
+ERROR - 2025-05-31 18:51:03 --> Billing Error: __clone method called on non-object
+ERROR - 2025-05-31 18:51:56 --> Billing Error: Undefined variable $createdDate
+ERROR - 2025-05-31 19:07:28 --> mysqli_sql_exception: Column 'billing_day' cannot be null in C:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `bi...', 0)
+#1 C:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bi...')
+#2 C:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bi...')
+#3 C:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bi...', Array, false)
+#4 C:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ISP Management - ALLSTAR TECH\app\Controllers\AdminController.php(566): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(933): App\Controllers\AdminController->addSubscriber()
+#9 C:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#10 C:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\ISP Management - ALLSTAR TECH\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\ISP Management - ALLSTAR TECH\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-05-31 23:28:27 --> ErrorException: Undefined variable $repair
+[Method: GET, Route: admin/tickets]
+in APPPATH\Views\admin\tickets.php on line 484.
+ 1 APPPATH\Views\admin\tickets.php(484): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $repair', 'C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php', 484)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1051): view('admin/tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->Tickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-31 23:28:53 --> ErrorException: Undefined variable $repair
+[Method: GET, Route: admin/tickets]
+in APPPATH\Views\admin\tickets.php on line 484.
+ 1 APPPATH\Views\admin\tickets.php(484): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $repair', 'C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php', 484)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1051): view('admin/tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->Tickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-31 23:28:53 --> ErrorException: Undefined variable $repair
+[Method: GET, Route: admin/tickets]
+in APPPATH\Views\admin\tickets.php on line 484.
+ 1 APPPATH\Views\admin\tickets.php(484): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $repair', 'C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php', 484)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1051): view('admin/tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->Tickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-31 23:36:25 --> ErrorException: Undefined variable $install_request
+[Method: GET, Route: admin/tickets]
+in APPPATH\Views\admin\tickets.php on line 487.
+ 1 APPPATH\Views\admin\tickets.php(487): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $install_request', 'C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php', 487)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1051): view('admin/tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->Tickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
+CRITICAL - 2025-05-31 23:41:50 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: admin/tickets]
+in APPPATH\Views\admin\tickets.php on line 484.
+ 1 APPPATH\Views\admin\tickets.php(484): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php', 484)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\app\\Views\\admin\\tickets.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/tickets', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1051): view('admin/tickets', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->Tickets()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ISP Management - ALLSTAR TECH\\public\\index.php')
