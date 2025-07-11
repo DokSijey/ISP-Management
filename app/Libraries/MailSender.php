@@ -20,7 +20,7 @@ class MailSender
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port       = 587;
 
-            $mail->setFrom('allstartechinternetservices@gmail.com', 'Allstar Tech Wireless Hotspot and Internet Services');
+            $mail->setFrom('#########@gmail.com', 'Sender');
             $mail->addAddress($to, $name);
 
             // Optional attachment
